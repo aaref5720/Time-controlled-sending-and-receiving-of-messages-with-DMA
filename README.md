@@ -1,8 +1,14 @@
-# AURIX TC375 - CAN Communication with DMA Transfer
+# AURIX TC375 - Time-Controlled CAN Communication with DMA Transfer
+
+## 🎓 Academic Context
+
+This project is part of the **ASE-12: Automotive Microcontroller (WS25/26)** course at **Technische Hochschule Deggendorf (THD)**, Germany.
+
+**Program:** Master's Degree in Automotive Software Engineering
 
 ## Project Overview
 
-This project demonstrates time-controlled CAN message transmission and reception on the Infineon AURIX TC375 microcontroller using the THD Adapter Lite board.
+This project demonstrates time-controlled CAN message transmission and reception on the Infineon AURIX TC375 microcontroller using the THD Adapter Lite board. It showcases the integration of multiple automotive-grade peripherals including GPT12 timers, DMA controller, and MCAN module.
 
 ## 📹 Video Demonstration
 
