@@ -95,8 +95,8 @@ Level_Libraries/      - Infineon iLLD library
 
 ## Author
 
-[Your Name]
+Abdelrahman Aref - [@aaref5720](https://github.com/aaref5720)
 
 ## License
 
-[Add your license here]
+MIT License
