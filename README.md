@@ -12,7 +12,9 @@ This project demonstrates time-controlled CAN message transmission and reception
 
 ## 📹 Video Demonstration
 
-[Link to video explanation - Add your video URL here]
+[![Video Demo](https://img.shields.io/badge/Watch-Video%20Demo-red?style=for-the-badge&logo=google-drive)](https://drive.google.com/file/d/174pWL1XzvMQKt8cVfJM7EHmHKlIeBQbN/view?usp=sharing)
+
+[🎬 Click here to watch the project demonstration](https://drive.google.com/file/d/174pWL1XzvMQKt8cVfJM7EHmHKlIeBQbN/view?usp=sharing)
 
 ## Features
 
