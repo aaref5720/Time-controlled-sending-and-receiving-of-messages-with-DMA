@@ -1,0 +1,1739 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
+	.compiler_invocation	"ctc -f cc22344a --dep-file=Level_02_Interfaces/AdapterLite/IF_Display.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc37x -D__CPU_TC37X__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc37x -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_02_Interfaces -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_02_Interfaces\\\\AdapterLite -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_02_Interfaces\\\\Interface_Libraries -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_02_Interfaces\\\\TC375_IntVectorTable_CPU0 -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_03_OS -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_03_OS\\\\FreeRTOS -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_03_OS\\\\FreeRTOS\\\\include -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_03_OS\\\\FreeRTOS\\\\portable -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_03_OS\\\\FreeRTOS\\\\portable\\\\GCC -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_03_OS\\\\FreeRTOS\\\\portable\\\\GCC\\\\TC3 -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_03_OS\\\\FreeRTOS\\\\portable\\\\Tasking -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_03_OS\\\\FreeRTOS\\\\portable\\\\Tasking\\\\TC3 -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_04_HAL -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_04_HAL\\\\HAL_Libraries -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_04_HAL\\\\TC375_CAN -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_04_HAL\\\\TC375_DMA -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_04_HAL\\\\TC375_GPT12 -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_04_HAL\\\\TC375_SCU -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Configurations -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Infra -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Infra\\\\Platform -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Infra\\\\Sfr -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Infra\\\\Sfr\\\\TC37A -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Infra\\\\Ssw -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Infra\\\\Ssw\\\\TC37A -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Infra\\\\Ssw\\\\TC37A\\\\Tricore -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Service -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Service\\\\CpuGeneric -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Service\\\\CpuGeneric\\\\If -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Comm -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\General -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Time -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin\\\\Asc -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin\\\\Lin -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin\\\\Spi -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can\\\\Can -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6 -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\Icu -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\PwmBc -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\PwmHl -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\TPwm -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\Timer -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\TimerWithTrigger -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Convctrl -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Convctrl\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Trap -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma\\\\Dma -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Edsadc -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Edsadc\\\\Edsadc -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Edsadc\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Adc -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Fce -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Fce\\\\Crc -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Fce\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Flash -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Flash\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Geth -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Geth\\\\Eth -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Geth\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12 -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12\\\\IncrEnc -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\I2c -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\I2c\\\\I2c -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\I2c\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Iom -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Iom\\\\Driver -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Iom\\\\Iom -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Iom\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port\\\\Io -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi\\\\SpiMaster -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi\\\\SpiSlave -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Smu -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Smu\\\\Smu -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Smu\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm\\\\Timer -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Impl -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Lib -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Lib\\\\DataHandling -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Lib\\\\InternalMux -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_PinMap -g3 -w544 -w557 -t2 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2012 -o Level_02_Interfaces/AdapterLite/IF_Display.src ../Level_02_Interfaces/AdapterLite/IF_Display.c"
+	.compiler_name		"ctc"
+	;source	'../Level_02_Interfaces/AdapterLite/IF_Display.c'
+
+	
+$TC162
+	
+	.sdecl	'.text.IF_Display.Func_Adapter_Display_init',code,cluster('Func_Adapter_Display_init')
+	.sect	'.text.IF_Display.Func_Adapter_Display_init'
+	.align	2
+	
+	.global	Func_Adapter_Display_init
+; Function Func_Adapter_Display_init
+.L76:
+Func_Adapter_Display_init:	.type	func
+	call	Func_Port_02_Pin_0_init
+.L163:
+	jne	d2,#0,.L2
+.L178:
+	call	Func_Port_02_Pin_3_init
+.L179:
+	jne	d2,#0,.L3
+.L180:
+	call	Func_Port_02_Pin_4_init
+.L181:
+	jne	d2,#0,.L4
+.L182:
+	call	Func_ASCLIN2_init
+.L183:
+	jeq	d2,#0,.L5
+.L5:
+	j	.L6
+.L4:
+.L6:
+	j	.L7
+.L3:
+.L7:
+	j	.L8
+.L2:
+.L8:
+	mov	d2,#0
+.L184:
+	j	.L9
+.L9:
+	ret
+.L132:
+	
+__Func_Adapter_Display_init_function_end:
+	.size	Func_Adapter_Display_init,__Func_Adapter_Display_init_function_end-Func_Adapter_Display_init
+.L95:
+	; End of function
+	
+	.sdecl	'.text.IF_Display.Func_EncodeDisplayInput',code,cluster('Func_EncodeDisplayInput')
+	.sect	'.text.IF_Display.Func_EncodeDisplayInput'
+	.align	2
+	
+	.global	Func_EncodeDisplayInput
+; Function Func_EncodeDisplayInput
+.L78:
+Func_EncodeDisplayInput:	.type	func
+	mov	d15,#0
+.L165:
+	j	.L10
+.L11:
+	addsc.a	a15,a4,d15,#0
+	ld.bu	d0,[a15]
+.L189:
+	mov	d1,#23
+	jlt	d1,d0,.L12
+	mov	d1,#0
+	jlt	d0,d1,.L12
+	sub	d1,d0,d1
+	movh.a	a15,#@his(.1.jmp)
+	lea	a15,[a15]@los(.1.jmp)
+	addsc.a	a15,a15,d1,#2
+	ld.a	a15,[a15]
+	ji	a15
+.L12:
+	j	.L13
+.L164:
+	
+	.sdecl	'.rodata.IF_Display..1.jmp',data,rom
+	.sect	'.rodata.IF_Display..1.jmp'
+	.align	4
+.1.jmp:	.type	object
+	.word	.L14
+	.word	.L15
+	.word	.L16
+	.word	.L17
+	.word	.L18
+	.word	.L19
+	.word	.L20
+	.word	.L21
+	.word	.L22
+	.word	.L23
+	.word	.L24
+	.word	.L25
+	.word	.L26
+	.word	.L27
+	.word	.L28
+	.word	.L29
+	.word	.L30
+	.word	.L31
+	.word	.L32
+	.word	.L33
+	.word	.L34
+	.word	.L13
+	.word	.L35
+	.word	.L36
+	
+	.sect	'.text.IF_Display.Func_EncodeDisplayInput'
+.L14:
+	addsc.a	a15,a5,d15,#0
+.L190:
+	mov	d0,#192
+.L191:
+	st.b	[a15],d0
+.L192:
+	j	.L37
+.L15:
+	addsc.a	a15,a5,d15,#0
+.L193:
+	mov	d0,#249
+.L194:
+	st.b	[a15],d0
+.L195:
+	j	.L38
+.L16:
+	addsc.a	a15,a5,d15,#0
+.L196:
+	mov	d0,#164
+.L197:
+	st.b	[a15],d0
+.L198:
+	j	.L39
+.L17:
+	addsc.a	a15,a5,d15,#0
+.L199:
+	mov	d0,#176
+.L200:
+	st.b	[a15],d0
+.L201:
+	j	.L40
+.L18:
+	addsc.a	a15,a5,d15,#0
+.L202:
+	mov	d0,#153
+.L203:
+	st.b	[a15],d0
+.L204:
+	j	.L41
+.L19:
+	addsc.a	a15,a5,d15,#0
+.L205:
+	mov	d0,#146
+.L206:
+	st.b	[a15],d0
+.L207:
+	j	.L42
+.L20:
+	addsc.a	a15,a5,d15,#0
+.L208:
+	mov	d0,#130
+.L209:
+	st.b	[a15],d0
+.L210:
+	j	.L43
+.L21:
+	addsc.a	a15,a5,d15,#0
+.L211:
+	mov	d0,#248
+.L212:
+	st.b	[a15],d0
+.L213:
+	j	.L44
+.L22:
+	addsc.a	a15,a5,d15,#0
+.L214:
+	mov	d0,#128
+.L215:
+	st.b	[a15],d0
+.L216:
+	j	.L45
+.L23:
+	addsc.a	a15,a5,d15,#0
+.L217:
+	mov	d0,#144
+.L218:
+	st.b	[a15],d0
+.L219:
+	j	.L46
+.L24:
+	addsc.a	a15,a5,d15,#0
+.L220:
+	mov	d0,#128
+.L221:
+	st.b	[a15],d0
+.L222:
+	j	.L47
+.L25:
+	addsc.a	a15,a5,d15,#0
+.L223:
+	mov	d0,#64
+.L224:
+	st.b	[a15],d0
+.L225:
+	j	.L48
+.L26:
+	addsc.a	a15,a5,d15,#0
+.L226:
+	mov	d0,#121
+.L227:
+	st.b	[a15],d0
+.L228:
+	j	.L49
+.L27:
+	addsc.a	a15,a5,d15,#0
+.L229:
+	mov	d0,#36
+.L230:
+	st.b	[a15],d0
+.L231:
+	j	.L50
+.L28:
+	addsc.a	a15,a5,d15,#0
+.L232:
+	mov	d0,#48
+.L233:
+	st.b	[a15],d0
+.L234:
+	j	.L51
+.L29:
+	addsc.a	a15,a5,d15,#0
+.L235:
+	mov	d0,#25
+.L236:
+	st.b	[a15],d0
+.L237:
+	j	.L52
+.L30:
+	addsc.a	a15,a5,d15,#0
+.L238:
+	mov	d0,#18
+.L239:
+	st.b	[a15],d0
+.L240:
+	j	.L53
+.L31:
+	addsc.a	a15,a5,d15,#0
+.L241:
+	mov	d0,#2
+.L242:
+	st.b	[a15],d0
+.L243:
+	j	.L54
+.L32:
+	addsc.a	a15,a5,d15,#0
+.L244:
+	mov	d0,#120
+.L245:
+	st.b	[a15],d0
+.L246:
+	j	.L55
+.L33:
+	addsc.a	a15,a5,d15,#0
+.L247:
+	mov	d0,#0
+.L248:
+	st.b	[a15],d0
+.L249:
+	j	.L56
+.L34:
+	addsc.a	a15,a5,d15,#0
+.L250:
+	mov	d0,#16
+.L251:
+	st.b	[a15],d0
+.L252:
+	j	.L57
+.L35:
+	addsc.a	a15,a5,d15,#0
+.L253:
+	mov	d0,#255
+.L254:
+	st.b	[a15],d0
+.L255:
+	j	.L58
+.L36:
+	addsc.a	a15,a5,d15,#0
+.L256:
+	mov	d0,#127
+.L257:
+	st.b	[a15],d0
+.L258:
+	j	.L59
+.L13:
+	addsc.a	a15,a5,d15,#0
+.L259:
+	mov	d0,#255
+.L260:
+	st.b	[a15],d0
+.L59:
+.L58:
+.L57:
+.L56:
+.L55:
+.L54:
+.L53:
+.L52:
+.L51:
+.L50:
+.L49:
+.L48:
+.L47:
+.L46:
+.L45:
+.L44:
+.L43:
+.L42:
+.L41:
+.L40:
+.L39:
+.L38:
+.L37:
+	add	d15,#1
+.L10:
+	jlt	d15,#4,.L11
+.L261:
+	mov	d2,#0
+.L262:
+	j	.L60
+.L60:
+	ret
+.L135:
+	
+__Func_EncodeDisplayInput_function_end:
+	.size	Func_EncodeDisplayInput,__Func_EncodeDisplayInput_function_end-Func_EncodeDisplayInput
+.L100:
+	; End of function
+	
+	.sdecl	'.text.IF_Display.Func_BuildDisplayOutput',code,cluster('Func_BuildDisplayOutput')
+	.sect	'.text.IF_Display.Func_BuildDisplayOutput'
+	.align	2
+	
+	.global	Func_BuildDisplayOutput
+; Function Func_BuildDisplayOutput
+.L80:
+Func_BuildDisplayOutput:	.type	func
+	mov	d0,#0
+.L166:
+	j	.L61
+.L62:
+	mul	d15,d0,#2
+	addsc.a	a15,a5,d15,#0
+.L267:
+	addsc.a	a2,a4,d0,#0
+	ld.bu	d15,[a2]
+.L268:
+	st.b	[a15]1,d15
+.L269:
+	mul	d15,d0,#2
+	addsc.a	a15,a5,d15,#0
+.L270:
+	movh.a	a2,#@his(DisplayElementPositionCode)
+	lea	a2,[a2]@los(DisplayElementPositionCode)
+.L271:
+	addsc.a	a2,a2,d0,#0
+	ld.bu	d15,[a2]
+.L272:
+	st.b	[a15],d15
+.L273:
+	add	d0,#1
+.L61:
+	jlt	d0,#4,.L62
+.L274:
+	mov	d2,#0
+.L275:
+	j	.L63
+.L63:
+	ret
+.L142:
+	
+__Func_BuildDisplayOutput_function_end:
+	.size	Func_BuildDisplayOutput,__Func_BuildDisplayOutput_function_end-Func_BuildDisplayOutput
+.L105:
+	; End of function
+	
+	.sdecl	'.text.IF_Display.Func_Build_ASCLIN_FIFO_Format',code,cluster('Func_Build_ASCLIN_FIFO_Format')
+	.sect	'.text.IF_Display.Func_Build_ASCLIN_FIFO_Format'
+	.align	2
+	
+	.global	Func_Build_ASCLIN_FIFO_Format
+; Function Func_Build_ASCLIN_FIFO_Format
+.L82:
+Func_Build_ASCLIN_FIFO_Format:	.type	func
+	mov	d0,#0
+.L167:
+	j	.L64
+.L65:
+	mul	d15,d0,#2
+	addsc.a	a15,a5,d15,#0
+.L280:
+	mov	d15,#0
+.L281:
+	st.h	[a15],d15
+.L282:
+	mul	d15,d0,#2
+	addsc.a	a2,a5,d15,#0
+.L283:
+	mul	d15,d0,#2
+	addsc.a	a15,a4,d15,#0
+.L284:
+	ld.bu	d15,[a15]1
+.L285:
+	sha	d1,d15,#8
+.L286:
+	mul	d15,d0,#2
+	addsc.a	a15,a4,d15,#0
+.L287:
+	ld.bu	d15,[a15]
+.L288:
+	or	d1,d15
+.L289:
+	st.h	[a2],d1
+.L290:
+	add	d0,#1
+.L64:
+	jlt	d0,#4,.L65
+.L291:
+	mov	d2,#0
+.L292:
+	j	.L66
+.L66:
+	ret
+.L147:
+	
+__Func_Build_ASCLIN_FIFO_Format_function_end:
+	.size	Func_Build_ASCLIN_FIFO_Format,__Func_Build_ASCLIN_FIFO_Format_function_end-Func_Build_ASCLIN_FIFO_Format
+.L110:
+	; End of function
+	
+	.sdecl	'.text.IF_Display.Func_SetDisplay',code,cluster('Func_SetDisplay')
+	.sect	'.text.IF_Display.Func_SetDisplay'
+	.align	2
+	
+	.global	Func_SetDisplay
+; Function Func_SetDisplay
+.L84:
+Func_SetDisplay:	.type	func
+	ge	d15,d5,#0
+.L297:
+	mov	d0,#3
+.L298:
+	ge	d0,d0,d5
+.L299:
+	or.t	d15,d15:0,d0:0
+.L300:
+	jeq	d15,#0,.L67
+.L301:
+	movh.a	a15,#@his(DisplayInputBuffer)
+	lea	a15,[a15]@los(DisplayInputBuffer)
+.L302:
+	addsc.a	a15,a15,d5,#0
+.L303:
+	st.b	[a15],d4
+.L304:
+	mov	d2,#0
+.L305:
+	j	.L68
+.L67:
+	mov	d2,#1
+.L306:
+	j	.L69
+.L69:
+.L68:
+	ret
+.L152:
+	
+__Func_SetDisplay_function_end:
+	.size	Func_SetDisplay,__Func_SetDisplay_function_end-Func_SetDisplay
+.L115:
+	; End of function
+	
+	.sdecl	'.text.IF_Display.Func_Convert2Display',code,cluster('Func_Convert2Display')
+	.sect	'.text.IF_Display.Func_Convert2Display'
+	.align	2
+	
+	.global	Func_Convert2Display
+; Function Func_Convert2Display
+.L86:
+Func_Convert2Display:	.type	func
+	movh.a	a4,#@his(DisplayInputBuffer)
+	lea	a4,[a4]@los(DisplayInputBuffer)
+.L311:
+	movh.a	a5,#@his(DisplayInputEncoded)
+	lea	a5,[a5]@los(DisplayInputEncoded)
+	call	Func_EncodeDisplayInput
+.L168:
+	jne	d2,#0,.L70
+.L312:
+	movh.a	a4,#@his(DisplayInputEncoded)
+	lea	a4,[a4]@los(DisplayInputEncoded)
+.L313:
+	movh.a	a5,#@his(DisplayOutputBuffer)
+	lea	a5,[a5]@los(DisplayOutputBuffer)
+	call	Func_BuildDisplayOutput
+.L314:
+	jne	d2,#0,.L71
+.L315:
+	movh.a	a4,#@his(DisplayOutputBuffer)
+	lea	a4,[a4]@los(DisplayOutputBuffer)
+.L316:
+	movh.a	a5,#@his(DisplayOutputFIFO)
+	lea	a5,[a5]@los(DisplayOutputFIFO)
+	call	Func_Build_ASCLIN_FIFO_Format
+.L317:
+	jne	d2,#0,.L72
+.L318:
+	mov	d2,#0
+.L169:
+	j	.L73
+.L72:
+.L71:
+.L70:
+	mov	d2,#1
+.L319:
+	j	.L74
+.L74:
+.L73:
+	ret
+.L156:
+	
+__Func_Convert2Display_function_end:
+	.size	Func_Convert2Display,__Func_Convert2Display_function_end-Func_Convert2Display
+.L120:
+	; End of function
+	
+	.sdecl	'.rodata.IF_Display.DisplayElementPositionCode',data,rom,cluster('DisplayElementPositionCode')
+	.sect	'.rodata.IF_Display.DisplayElementPositionCode'
+	.global	DisplayElementPositionCode
+DisplayElementPositionCode:	.type	object
+	.size	DisplayElementPositionCode,4
+	.byte	241,242,244,248
+	.sdecl	'.bss.IF_Display.DisplayInputBuffer',data,cluster('DisplayInputBuffer')
+	.sect	'.bss.IF_Display.DisplayInputBuffer'
+	.global	DisplayInputBuffer
+DisplayInputBuffer:	.type	object
+	.size	DisplayInputBuffer,4
+	.space	4
+	.sdecl	'.bss.IF_Display.DisplayInputEncoded',data,cluster('DisplayInputEncoded')
+	.sect	'.bss.IF_Display.DisplayInputEncoded'
+	.global	DisplayInputEncoded
+DisplayInputEncoded:	.type	object
+	.size	DisplayInputEncoded,4
+	.space	4
+	.sdecl	'.bss.IF_Display.DisplayOutputBuffer',data,cluster('DisplayOutputBuffer')
+	.sect	'.bss.IF_Display.DisplayOutputBuffer'
+	.global	DisplayOutputBuffer
+	.align	2
+DisplayOutputBuffer:	.type	object
+	.size	DisplayOutputBuffer,8
+	.space	8
+	.sdecl	'.bss.IF_Display.DisplayOutputFIFO',data,cluster('DisplayOutputFIFO')
+	.sect	'.bss.IF_Display.DisplayOutputFIFO'
+	.global	DisplayOutputFIFO
+	.align	4
+DisplayOutputFIFO:	.type	object
+	.size	DisplayOutputFIFO,8
+	.space	8
+	.calls	'Func_Adapter_Display_init','Func_Port_02_Pin_0_init'
+	.calls	'Func_Adapter_Display_init','Func_Port_02_Pin_3_init'
+	.calls	'Func_Adapter_Display_init','Func_Port_02_Pin_4_init'
+	.calls	'Func_Adapter_Display_init','Func_ASCLIN2_init'
+	.calls	'Func_Convert2Display','Func_EncodeDisplayInput'
+	.calls	'Func_Convert2Display','Func_BuildDisplayOutput'
+	.calls	'Func_Convert2Display','Func_Build_ASCLIN_FIFO_Format'
+	.calls	'Func_Adapter_Display_init','',0
+	.calls	'Func_EncodeDisplayInput','',0
+	.calls	'Func_BuildDisplayOutput','',0
+	.calls	'Func_Build_ASCLIN_FIFO_Format','',0
+	.calls	'Func_SetDisplay','',0
+	.extern	Func_Port_02_Pin_0_init
+	.extern	Func_Port_02_Pin_3_init
+	.extern	Func_Port_02_Pin_4_init
+	.extern	Func_ASCLIN2_init
+	.calls	'Func_Convert2Display','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L88:
+	.word	1390
+	.half	3
+	.word	.L89
+	.byte	4
+.L87:
+	.byte	1
+	.byte	'../Level_02_Interfaces/AdapterLite/IF_Display.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\AURIX_Practice_07_Display-by-DMA\\TriCore Debug (TASKING)\\',0
+	.byte	12,1
+	.word	.L90
+.L133:
+	.byte	2
+	.byte	'_HAL_Return_Type',0,2,67,14,1,3
+	.byte	'HAL_E_OK',0,0,3
+	.byte	'HAL_E_NOT_OK',0,1,0,4
+	.byte	'Func_Port_02_Pin_0_init',0,1,89,24
+	.word	296
+	.byte	1,1,1,1,4
+	.byte	'Func_Port_02_Pin_3_init',0,1,90,24
+	.word	296
+	.byte	1,1,1,1,4
+	.byte	'Func_Port_02_Pin_4_init',0,1,91,24
+	.word	296
+	.byte	1,1,1,1,4
+	.byte	'Func_ASCLIN2_init',0,1,93,24
+	.word	296
+	.byte	1,1,1,1
+.L131:
+	.byte	2
+	.byte	'_L02_Return_Type',0,3,66,14,1,3
+	.byte	'L02_E_OK',0,0,3
+	.byte	'L02_E_NOT_OK',0,1,0
+.L153:
+	.byte	2
+	.byte	'_DisplayPrompt',0,4,56,14,1,3
+	.byte	'DispPrompt_0noDot',0,0,3
+	.byte	'DispPrompt_1noDot',0,1,3
+	.byte	'DispPrompt_2noDot',0,2,3
+	.byte	'DispPrompt_3noDot',0,3,3
+	.byte	'DispPrompt_4noDot',0,4,3
+	.byte	'DispPrompt_5noDot',0,5,3
+	.byte	'DispPrompt_6noDot',0,6,3
+	.byte	'DispPrompt_7noDot',0,7,3
+	.byte	'DispPrompt_8noDot',0,8,3
+	.byte	'DispPrompt_9noDot',0,9,3
+	.byte	'DispPrompt_ONnoDot',0,10,3
+	.byte	'DispPrompt_0withDot',0,11,3
+	.byte	'DispPrompt_1withDot',0,12,3
+	.byte	'DispPrompt_2withDot',0,13,3
+	.byte	'DispPrompt_3withDot',0,14,3
+	.byte	'DispPrompt_4withDot',0,15,3
+	.byte	'DispPrompt_5withDot',0,16,3
+	.byte	'DispPrompt_6withDot',0,17,3
+	.byte	'DispPrompt_7withDot',0,18,3
+	.byte	'DispPrompt_8withDot',0,19,3
+	.byte	'DispPrompt_9withDot',0,20,3
+	.byte	'DispPrompt_ONwithDot',0,21,3
+	.byte	'DispPrompt_OFF',0,22,3
+	.byte	'DispPrompt_Dot',0,23,0
+.L136:
+	.byte	5
+	.word	532
+	.byte	6
+	.byte	'unsigned char',0,1,8
+.L138:
+	.byte	5
+	.word	1056
+.L140:
+	.byte	6
+	.byte	'int',0,4,5,7
+	.byte	'_DisplayElementStruct',0,4,85,16,2,8
+	.byte	'ElementPositionCode',0
+	.word	1056
+	.byte	1,2,35,0,8
+	.byte	'ElementShowCode',0
+	.word	1056
+	.byte	1,2,35,1,0
+.L144:
+	.byte	5
+	.word	1085
+	.byte	6
+	.byte	'unsigned short int',0,2,7
+.L149:
+	.byte	5
+	.word	1172
+	.byte	9,1,5
+	.word	1199
+	.byte	10
+	.byte	'__codeptr',0,1,1,1
+	.word	1201
+	.byte	10
+	.byte	'uint8',0,5,108,29
+	.word	1056
+	.byte	10
+	.byte	'uint16',0,5,112,29
+	.word	1172
+	.byte	10
+	.byte	'DisplayPrompt',0,4,82,3
+	.word	532
+	.byte	10
+	.byte	'DisplayElementStruct',0,4,89,3
+	.word	1085
+	.byte	10
+	.byte	'HAL_Return_Type',0,2,71,3
+	.word	296
+	.byte	10
+	.byte	'L02_Return_Type',0,3,70,3
+	.word	483
+.L160:
+	.byte	11,4
+	.word	1056
+	.byte	12,3,0
+.L158:
+	.byte	13
+	.word	1352
+.L159:
+	.byte	11,4
+	.word	532
+	.byte	12,3,0
+.L161:
+	.byte	11,8
+	.word	1085
+	.byte	12,3,0
+.L162:
+	.byte	11,8
+	.word	1172
+	.byte	12,3,0,0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L89:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,4,1,3,8,58,15,59,15,57,15,11,15,0,0,3,40,0,3,8,28,13,0
+	.byte	0,4,46,0,3,8,58,15,59,15,57,15,73,19,54,15,39,12,63,12,60,12,0,0,5,15,0,73,19,0,0,6,36,0,3,8,11,15,62
+	.byte	15,0,0,7,19,1,3,8,58,15,59,15,57,15,11,15,0,0,8,13,0,3,8,73,19,11,15,56,9,0,0,9,21,0,54,15,0,0,10,22,0
+	.byte	3,8,58,15,59,15,57,15,73,19,0,0,11,1,1,11,15,73,19,0,0,12,33,0,47,15,0,0,13,38,0,73,19,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L90:
+	.word	.L171-.L170
+.L170:
+	.half	3
+	.word	.L173-.L172
+.L172:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../Level_02_Interfaces/AdapterLite/IF_Display.c',0,0,0,0
+	.byte	'C:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\Level_04_HAL\\HAL_Libraries\\HAL_Return_Types.h',0
+	.byte	0,0,0
+	.byte	'C:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\Level_02_Interfaces\\Interface_Libraries\\L02_Return_Types.h',0
+	.byte	0,0,0
+	.byte	'..\\Level_02_Interfaces\\AdapterLite\\IF_Display.h',0,0,0,0
+	.byte	'C:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\Level_Libraries\\iLLD\\TC37A\\Tricore\\Cpu\\Std\\Platform_Types.h',0
+	.byte	0,0,0,0
+.L173:
+.L171:
+	.sdecl	'.debug_pubnames',debug
+	.sect	'.debug_pubnames'
+	.word	120
+	.half	2
+	.word	.L88,1394,345
+	.byte	'Func_Port_02_Pin_0_init',0
+	.word	381
+	.byte	'Func_Port_02_Pin_3_init',0
+	.word	417
+	.byte	'Func_Port_02_Pin_4_init',0
+	.word	453
+	.byte	'Func_ASCLIN2_init',0
+	.word	0
+	.sdecl	'.debug_info',debug,cluster('Func_Adapter_Display_init')
+	.sect	'.debug_info'
+.L91:
+	.word	381
+	.half	3
+	.word	.L92
+	.byte	4,1
+	.byte	'../Level_02_Interfaces/AdapterLite/IF_Display.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\AURIX_Practice_07_Display-by-DMA\\TriCore Debug (TASKING)\\',0
+	.byte	12,1
+	.word	.L94,.L93
+	.byte	2
+	.word	.L87
+	.byte	3
+	.byte	'Func_Adapter_Display_init',0,1,144,1,17
+	.word	.L131
+	.byte	1,1,1
+	.word	.L76,.L132,.L75
+	.byte	4
+	.word	.L76,.L132
+	.byte	5
+	.byte	'tmp1',0,1,146,1,21
+	.word	.L133,.L134
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Func_Adapter_Display_init')
+	.sect	'.debug_abbrev'
+.L92:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Func_Adapter_Display_init')
+	.sect	'.debug_line'
+.L93:
+	.word	.L175-.L174
+.L174:
+	.half	3
+	.word	.L177-.L176
+.L176:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../Level_02_Interfaces/AdapterLite/IF_Display.c',0,0,0,0,0
+.L177:
+	.byte	5,35,7,0,5,2
+	.word	.L76
+	.byte	3,147,1,1,5,5,9
+	.half	.L163-.L76
+	.byte	3,2,1,5,39,7,9
+	.half	.L178-.L163
+	.byte	3,2,1,5,9,9
+	.half	.L179-.L178
+	.byte	3,2,1,5,43,7,9
+	.half	.L180-.L179
+	.byte	3,2,1,5,13,9
+	.half	.L181-.L180
+	.byte	3,2,1,5,42,7,9
+	.half	.L182-.L181
+	.byte	3,2,1,5,17,9
+	.half	.L183-.L182
+	.byte	3,2,1,7,9
+	.half	.L5-.L183
+	.byte	1,5,13,9
+	.half	.L6-.L5
+	.byte	3,5,1,5,9,9
+	.half	.L7-.L6
+	.byte	3,5,1,5,12,9
+	.half	.L8-.L7
+	.byte	3,10,1,5,5,9
+	.half	.L184-.L8
+	.byte	1,5,1,9
+	.half	.L9-.L184
+	.byte	3,1,1,7,9
+	.half	.L95-.L9
+	.byte	0,1,1
+.L175:
+	.sdecl	'.debug_ranges',debug,cluster('Func_Adapter_Display_init')
+	.sect	'.debug_ranges'
+.L94:
+	.word	-1,.L76,0,.L95-.L76,0,0
+	.sdecl	'.debug_pubnames',debug
+	.sect	'.debug_pubnames'
+	.word	44
+	.half	2
+	.word	.L91,385,305
+	.byte	'Func_Adapter_Display_init',0
+	.word	0
+	.sdecl	'.debug_info',debug,cluster('Func_EncodeDisplayInput')
+	.sect	'.debug_info'
+.L96:
+	.word	425
+	.half	3
+	.word	.L97
+	.byte	4,1
+	.byte	'../Level_02_Interfaces/AdapterLite/IF_Display.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\AURIX_Practice_07_Display-by-DMA\\TriCore Debug (TASKING)\\',0
+	.byte	12,1
+	.word	.L99,.L98
+	.byte	2
+	.word	.L87
+	.byte	3
+	.byte	'Func_EncodeDisplayInput',0,1,194,1,17
+	.word	.L131
+	.byte	1,1,1
+	.word	.L78,.L135,.L77
+	.byte	4
+	.byte	'inputfield',0,1,194,1,55
+	.word	.L136,.L137
+	.byte	4
+	.byte	'outputfield',0,1,194,1,75
+	.word	.L138,.L139
+	.byte	5
+	.word	.L78,.L135
+	.byte	6
+	.byte	'i',0,1,196,1,9
+	.word	.L140,.L141
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Func_EncodeDisplayInput')
+	.sect	'.debug_abbrev'
+.L97:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Func_EncodeDisplayInput')
+	.sect	'.debug_line'
+.L98:
+	.word	.L186-.L185
+.L185:
+	.half	3
+	.word	.L188-.L187
+.L187:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../Level_02_Interfaces/AdapterLite/IF_Display.c',0,0,0,0,0
+.L188:
+	.byte	5,12,7,0,5,2
+	.word	.L78
+	.byte	3,197,1,1,5,20,9
+	.half	.L165-.L78
+	.byte	1,5,27,9
+	.half	.L11-.L165
+	.byte	3,2,1,5,9,9
+	.half	.L189-.L11
+	.byte	1,5,28,9
+	.half	.L14-.L189
+	.byte	3,3,1,5,34,9
+	.half	.L190-.L14
+	.byte	1,5,32,9
+	.half	.L191-.L190
+	.byte	1,5,17,9
+	.half	.L192-.L191
+	.byte	3,1,1,5,28,9
+	.half	.L15-.L192
+	.byte	3,2,1,5,34,9
+	.half	.L193-.L15
+	.byte	1,5,32,9
+	.half	.L194-.L193
+	.byte	1,5,17,9
+	.half	.L195-.L194
+	.byte	3,1,1,5,29,9
+	.half	.L16-.L195
+	.byte	3,2,1,5,35,9
+	.half	.L196-.L16
+	.byte	1,5,33,9
+	.half	.L197-.L196
+	.byte	1,5,18,9
+	.half	.L198-.L197
+	.byte	3,1,1,5,29,9
+	.half	.L17-.L198
+	.byte	3,2,1,5,35,9
+	.half	.L199-.L17
+	.byte	1,5,33,9
+	.half	.L200-.L199
+	.byte	1,5,18,9
+	.half	.L201-.L200
+	.byte	3,1,1,5,28,9
+	.half	.L18-.L201
+	.byte	3,2,1,5,34,9
+	.half	.L202-.L18
+	.byte	1,5,32,9
+	.half	.L203-.L202
+	.byte	1,5,17,9
+	.half	.L204-.L203
+	.byte	3,1,1,5,28,9
+	.half	.L19-.L204
+	.byte	3,2,1,5,34,9
+	.half	.L205-.L19
+	.byte	1,5,32,9
+	.half	.L206-.L205
+	.byte	1,5,17,9
+	.half	.L207-.L206
+	.byte	3,1,1,5,29,9
+	.half	.L20-.L207
+	.byte	3,2,1,5,35,9
+	.half	.L208-.L20
+	.byte	1,5,33,9
+	.half	.L209-.L208
+	.byte	1,5,18,9
+	.half	.L210-.L209
+	.byte	3,1,1,5,29,9
+	.half	.L21-.L210
+	.byte	3,2,1,5,35,9
+	.half	.L211-.L21
+	.byte	1,5,33,9
+	.half	.L212-.L211
+	.byte	1,5,18,9
+	.half	.L213-.L212
+	.byte	3,1,1,5,29,9
+	.half	.L22-.L213
+	.byte	3,2,1,5,35,9
+	.half	.L214-.L22
+	.byte	1,5,33,9
+	.half	.L215-.L214
+	.byte	1,5,18,9
+	.half	.L216-.L215
+	.byte	3,1,1,5,29,9
+	.half	.L23-.L216
+	.byte	3,2,1,5,35,9
+	.half	.L217-.L23
+	.byte	1,5,33,9
+	.half	.L218-.L217
+	.byte	1,5,18,9
+	.half	.L219-.L218
+	.byte	3,1,1,5,29,9
+	.half	.L24-.L219
+	.byte	3,2,1,5,35,9
+	.half	.L220-.L24
+	.byte	1,5,33,9
+	.half	.L221-.L220
+	.byte	1,5,18,9
+	.half	.L222-.L221
+	.byte	3,1,1,5,28,9
+	.half	.L25-.L222
+	.byte	3,2,1,5,34,9
+	.half	.L223-.L25
+	.byte	1,5,32,9
+	.half	.L224-.L223
+	.byte	1,5,17,9
+	.half	.L225-.L224
+	.byte	3,1,1,5,28,9
+	.half	.L26-.L225
+	.byte	3,2,1,5,34,9
+	.half	.L226-.L26
+	.byte	1,5,32,9
+	.half	.L227-.L226
+	.byte	1,5,17,9
+	.half	.L228-.L227
+	.byte	3,1,1,5,29,9
+	.half	.L27-.L228
+	.byte	3,2,1,5,35,9
+	.half	.L229-.L27
+	.byte	1,5,33,9
+	.half	.L230-.L229
+	.byte	1,5,18,9
+	.half	.L231-.L230
+	.byte	3,1,1,5,29,9
+	.half	.L28-.L231
+	.byte	3,2,1,5,35,9
+	.half	.L232-.L28
+	.byte	1,5,33,9
+	.half	.L233-.L232
+	.byte	1,5,18,9
+	.half	.L234-.L233
+	.byte	3,1,1,5,29,9
+	.half	.L29-.L234
+	.byte	3,2,1,5,35,9
+	.half	.L235-.L29
+	.byte	1,5,33,9
+	.half	.L236-.L235
+	.byte	1,5,17,9
+	.half	.L237-.L236
+	.byte	3,1,1,5,29,9
+	.half	.L30-.L237
+	.byte	3,2,1,5,35,9
+	.half	.L238-.L30
+	.byte	1,5,33,9
+	.half	.L239-.L238
+	.byte	1,5,17,9
+	.half	.L240-.L239
+	.byte	3,1,1,5,29,9
+	.half	.L31-.L240
+	.byte	3,2,1,5,35,9
+	.half	.L241-.L31
+	.byte	1,5,33,9
+	.half	.L242-.L241
+	.byte	1,5,18,9
+	.half	.L243-.L242
+	.byte	3,1,1,5,29,9
+	.half	.L32-.L243
+	.byte	3,2,1,5,35,9
+	.half	.L244-.L32
+	.byte	1,5,33,9
+	.half	.L245-.L244
+	.byte	1,5,18,9
+	.half	.L246-.L245
+	.byte	3,1,1,5,29,9
+	.half	.L33-.L246
+	.byte	3,2,1,5,35,9
+	.half	.L247-.L33
+	.byte	1,5,33,9
+	.half	.L248-.L247
+	.byte	1,5,18,9
+	.half	.L249-.L248
+	.byte	3,1,1,5,29,9
+	.half	.L34-.L249
+	.byte	3,2,1,5,35,9
+	.half	.L250-.L34
+	.byte	1,5,33,9
+	.half	.L251-.L250
+	.byte	1,5,18,9
+	.half	.L252-.L251
+	.byte	3,1,1,5,29,9
+	.half	.L35-.L252
+	.byte	3,2,1,5,35,9
+	.half	.L253-.L35
+	.byte	1,5,33,9
+	.half	.L254-.L253
+	.byte	1,5,18,9
+	.half	.L255-.L254
+	.byte	3,1,1,5,29,9
+	.half	.L36-.L255
+	.byte	3,2,1,5,35,9
+	.half	.L256-.L36
+	.byte	1,5,33,9
+	.half	.L257-.L256
+	.byte	1,5,18,9
+	.half	.L258-.L257
+	.byte	3,1,1,5,28,9
+	.half	.L13-.L258
+	.byte	3,2,1,5,34,9
+	.half	.L259-.L13
+	.byte	1,5,32,9
+	.half	.L260-.L259
+	.byte	1,5,23,9
+	.half	.L37-.L260
+	.byte	3,182,127,1,5,20,9
+	.half	.L10-.L37
+	.byte	1,5,12,7,9
+	.half	.L261-.L10
+	.byte	3,206,0,1,5,5,9
+	.half	.L262-.L261
+	.byte	1,5,1,9
+	.half	.L60-.L262
+	.byte	3,1,1,7,9
+	.half	.L100-.L60
+	.byte	0,1,1
+.L186:
+	.sdecl	'.debug_ranges',debug,cluster('Func_EncodeDisplayInput')
+	.sect	'.debug_ranges'
+.L99:
+	.word	-1,.L78,0,.L100-.L78,0,0
+	.sdecl	'.debug_pubnames',debug
+	.sect	'.debug_pubnames'
+	.word	42
+	.half	2
+	.word	.L96,429,305
+	.byte	'Func_EncodeDisplayInput',0
+	.word	0
+	.sdecl	'.debug_info',debug,cluster('Func_BuildDisplayOutput')
+	.sect	'.debug_info'
+.L101:
+	.word	425
+	.half	3
+	.word	.L102
+	.byte	4,1
+	.byte	'../Level_02_Interfaces/AdapterLite/IF_Display.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\AURIX_Practice_07_Display-by-DMA\\TriCore Debug (TASKING)\\',0
+	.byte	12,1
+	.word	.L104,.L103
+	.byte	2
+	.word	.L87
+	.byte	3
+	.byte	'Func_BuildDisplayOutput',0,1,160,2,17
+	.word	.L131
+	.byte	1,1,1
+	.word	.L80,.L142,.L79
+	.byte	4
+	.byte	'inputfield',0,1,160,2,47
+	.word	.L138,.L143
+	.byte	4
+	.byte	'outputfield',0,1,160,2,82
+	.word	.L144,.L145
+	.byte	5
+	.word	.L80,.L142
+	.byte	6
+	.byte	'i',0,1,162,2,9
+	.word	.L140,.L146
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Func_BuildDisplayOutput')
+	.sect	'.debug_abbrev'
+.L102:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Func_BuildDisplayOutput')
+	.sect	'.debug_line'
+.L103:
+	.word	.L264-.L263
+.L263:
+	.half	3
+	.word	.L266-.L265
+.L265:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../Level_02_Interfaces/AdapterLite/IF_Display.c',0,0,0,0,0
+.L266:
+	.byte	5,12,7,0,5,2
+	.word	.L80
+	.byte	3,163,2,1,5,22,9
+	.half	.L166-.L80
+	.byte	1,5,20,9
+	.half	.L62-.L166
+	.byte	3,2,1,5,52,9
+	.half	.L267-.L62
+	.byte	1,5,40,9
+	.half	.L268-.L267
+	.byte	1,5,20,9
+	.half	.L269-.L268
+	.byte	3,1,1,5,46,9
+	.half	.L270-.L269
+	.byte	1,5,72,9
+	.half	.L271-.L270
+	.byte	1,5,44,9
+	.half	.L272-.L271
+	.byte	1,5,25,9
+	.half	.L273-.L272
+	.byte	3,125,1,5,22,9
+	.half	.L61-.L273
+	.byte	1,5,12,7,9
+	.half	.L274-.L61
+	.byte	3,6,1,5,5,9
+	.half	.L275-.L274
+	.byte	1,5,1,9
+	.half	.L63-.L275
+	.byte	3,1,1,7,9
+	.half	.L105-.L63
+	.byte	0,1,1
+.L264:
+	.sdecl	'.debug_ranges',debug,cluster('Func_BuildDisplayOutput')
+	.sect	'.debug_ranges'
+.L104:
+	.word	-1,.L80,0,.L105-.L80,0,0
+	.sdecl	'.debug_pubnames',debug
+	.sect	'.debug_pubnames'
+	.word	42
+	.half	2
+	.word	.L101,429,305
+	.byte	'Func_BuildDisplayOutput',0
+	.word	0
+	.sdecl	'.debug_info',debug,cluster('Func_Build_ASCLIN_FIFO_Format')
+	.sect	'.debug_info'
+.L106:
+	.word	431
+	.half	3
+	.word	.L107
+	.byte	4,1
+	.byte	'../Level_02_Interfaces/AdapterLite/IF_Display.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\AURIX_Practice_07_Display-by-DMA\\TriCore Debug (TASKING)\\',0
+	.byte	12,1
+	.word	.L109,.L108
+	.byte	2
+	.word	.L87
+	.byte	3
+	.byte	'Func_Build_ASCLIN_FIFO_Format',0,1,182,2,17
+	.word	.L131
+	.byte	1,1,1
+	.word	.L82,.L147,.L81
+	.byte	4
+	.byte	'inputfield',0,1,182,2,68
+	.word	.L144,.L148
+	.byte	4
+	.byte	'outputfield',0,1,182,2,89
+	.word	.L149,.L150
+	.byte	5
+	.word	.L82,.L147
+	.byte	6
+	.byte	'i',0,1,184,2,9
+	.word	.L140,.L151
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Func_Build_ASCLIN_FIFO_Format')
+	.sect	'.debug_abbrev'
+.L107:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Func_Build_ASCLIN_FIFO_Format')
+	.sect	'.debug_line'
+.L108:
+	.word	.L277-.L276
+.L276:
+	.half	3
+	.word	.L279-.L278
+.L278:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../Level_02_Interfaces/AdapterLite/IF_Display.c',0,0,0,0,0
+.L279:
+	.byte	5,12,7,0,5,2
+	.word	.L82
+	.byte	3,185,2,1,5,22,9
+	.half	.L167-.L82
+	.byte	1,5,20,9
+	.half	.L65-.L167
+	.byte	3,2,1,5,26,9
+	.half	.L280-.L65
+	.byte	1,5,24,9
+	.half	.L281-.L280
+	.byte	1,5,20,9
+	.half	.L282-.L281
+	.byte	3,1,1,5,38,9
+	.half	.L283-.L282
+	.byte	1,5,41,9
+	.half	.L284-.L283
+	.byte	1,5,59,9
+	.half	.L285-.L284
+	.byte	1,5,76,9
+	.half	.L286-.L285
+	.byte	1,5,79,9
+	.half	.L287-.L286
+	.byte	1,5,64,9
+	.half	.L288-.L287
+	.byte	1,5,24,9
+	.half	.L289-.L288
+	.byte	1,5,25,9
+	.half	.L290-.L289
+	.byte	3,125,1,5,22,9
+	.half	.L64-.L290
+	.byte	1,5,12,7,9
+	.half	.L291-.L64
+	.byte	3,6,1,5,5,9
+	.half	.L292-.L291
+	.byte	1,5,1,9
+	.half	.L66-.L292
+	.byte	3,1,1,7,9
+	.half	.L110-.L66
+	.byte	0,1,1
+.L277:
+	.sdecl	'.debug_ranges',debug,cluster('Func_Build_ASCLIN_FIFO_Format')
+	.sect	'.debug_ranges'
+.L109:
+	.word	-1,.L82,0,.L110-.L82,0,0
+	.sdecl	'.debug_pubnames',debug
+	.sect	'.debug_pubnames'
+	.word	48
+	.half	2
+	.word	.L106,435,305
+	.byte	'Func_Build_ASCLIN_FIFO_Format',0
+	.word	0
+	.sdecl	'.debug_info',debug,cluster('Func_SetDisplay')
+	.sect	'.debug_info'
+.L111:
+	.word	397
+	.half	3
+	.word	.L112
+	.byte	4,1
+	.byte	'../Level_02_Interfaces/AdapterLite/IF_Display.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\AURIX_Practice_07_Display-by-DMA\\TriCore Debug (TASKING)\\',0
+	.byte	12,1
+	.word	.L114,.L113
+	.byte	2
+	.word	.L87
+	.byte	3
+	.byte	'Func_SetDisplay',0,1,205,2,17
+	.word	.L131
+	.byte	1,1,1
+	.word	.L84,.L152,.L83
+	.byte	4
+	.byte	'character',0,1,205,2,47
+	.word	.L153,.L154
+	.byte	4
+	.byte	'position',0,1,205,2,62
+	.word	.L140,.L155
+	.byte	5
+	.word	.L84,.L152
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Func_SetDisplay')
+	.sect	'.debug_abbrev'
+.L112:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Func_SetDisplay')
+	.sect	'.debug_line'
+.L113:
+	.word	.L294-.L293
+.L293:
+	.half	3
+	.word	.L296-.L295
+.L295:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../Level_02_Interfaces/AdapterLite/IF_Display.c',0,0,0,0,0
+.L296:
+	.byte	5,18,7,0,5,2
+	.word	.L84
+	.byte	3,206,2,1,5,39,9
+	.half	.L297-.L84
+	.byte	1,5,36,9
+	.half	.L298-.L297
+	.byte	1,5,24,9
+	.half	.L299-.L298
+	.byte	1,5,5,9
+	.half	.L300-.L299
+	.byte	1,5,9,7,9
+	.half	.L301-.L300
+	.byte	3,2,1,5,27,9
+	.half	.L302-.L301
+	.byte	1,5,38,9
+	.half	.L303-.L302
+	.byte	1,5,16,9
+	.half	.L304-.L303
+	.byte	3,1,1,5,9,9
+	.half	.L305-.L304
+	.byte	1,5,16,9
+	.half	.L67-.L305
+	.byte	3,4,1,5,9,9
+	.half	.L306-.L67
+	.byte	1,5,1,9
+	.half	.L68-.L306
+	.byte	3,2,1,7,9
+	.half	.L115-.L68
+	.byte	0,1,1
+.L294:
+	.sdecl	'.debug_ranges',debug,cluster('Func_SetDisplay')
+	.sect	'.debug_ranges'
+.L114:
+	.word	-1,.L84,0,.L115-.L84,0,0
+	.sdecl	'.debug_pubnames',debug
+	.sect	'.debug_pubnames'
+	.word	34
+	.half	2
+	.word	.L111,401,305
+	.byte	'Func_SetDisplay',0
+	.word	0
+	.sdecl	'.debug_info',debug,cluster('Func_Convert2Display')
+	.sect	'.debug_info'
+.L116:
+	.word	379
+	.half	3
+	.word	.L117
+	.byte	4,1
+	.byte	'../Level_02_Interfaces/AdapterLite/IF_Display.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\AURIX_Practice_07_Display-by-DMA\\TriCore Debug (TASKING)\\',0
+	.byte	12,1
+	.word	.L119,.L118
+	.byte	2
+	.word	.L87
+	.byte	3
+	.byte	'Func_Convert2Display',0,1,228,2,17
+	.word	.L131
+	.byte	1,1,1
+	.word	.L86,.L156,.L85
+	.byte	4
+	.word	.L86,.L156
+	.byte	5
+	.byte	'tmp_L02',0,1,230,2,21
+	.word	.L131,.L157
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Func_Convert2Display')
+	.sect	'.debug_abbrev'
+.L117:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Func_Convert2Display')
+	.sect	'.debug_line'
+.L118:
+	.word	.L308-.L307
+.L307:
+	.half	3
+	.word	.L310-.L309
+.L309:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../Level_02_Interfaces/AdapterLite/IF_Display.c',0,0,0,0,0
+.L310:
+	.byte	5,39,7,0,5,2
+	.word	.L86
+	.byte	3,231,2,1,5,59,9
+	.half	.L311-.L86
+	.byte	1,5,5,9
+	.half	.L168-.L311
+	.byte	3,2,1,5,43,7,9
+	.half	.L312-.L168
+	.byte	3,2,1,5,64,9
+	.half	.L313-.L312
+	.byte	1,5,9,9
+	.half	.L314-.L313
+	.byte	3,2,1,5,53,7,9
+	.half	.L315-.L314
+	.byte	3,2,1,5,74,9
+	.half	.L316-.L315
+	.byte	1,5,13,9
+	.half	.L317-.L316
+	.byte	3,2,1,5,24,7,9
+	.half	.L318-.L317
+	.byte	3,2,1,5,17,9
+	.half	.L169-.L318
+	.byte	1,5,12,9
+	.half	.L70-.L169
+	.byte	3,4,1,5,5,9
+	.half	.L319-.L70
+	.byte	1,5,1,9
+	.half	.L73-.L319
+	.byte	3,1,1,7,9
+	.half	.L120-.L73
+	.byte	0,1,1
+.L308:
+	.sdecl	'.debug_ranges',debug,cluster('Func_Convert2Display')
+	.sect	'.debug_ranges'
+.L119:
+	.word	-1,.L86,0,.L120-.L86,0,0
+	.sdecl	'.debug_pubnames',debug
+	.sect	'.debug_pubnames'
+	.word	39
+	.half	2
+	.word	.L116,383,305
+	.byte	'Func_Convert2Display',0
+	.word	0
+	.sdecl	'.debug_info',debug,cluster('DisplayElementPositionCode')
+	.sect	'.debug_info'
+.L121:
+	.word	336
+	.half	3
+	.word	.L122
+	.byte	4,1
+	.byte	'../Level_02_Interfaces/AdapterLite/IF_Display.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\AURIX_Practice_07_Display-by-DMA\\TriCore Debug (TASKING)\\',0
+	.byte	12,1,2
+	.word	.L87
+	.byte	3
+	.byte	'DisplayElementPositionCode',0,1,102,13
+	.word	.L158
+	.byte	1,5,3
+	.word	DisplayElementPositionCode
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('DisplayElementPositionCode')
+	.sect	'.debug_abbrev'
+.L122:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('DisplayInputBuffer')
+	.sect	'.debug_info'
+.L123:
+	.word	328
+	.half	3
+	.word	.L124
+	.byte	4,1
+	.byte	'../Level_02_Interfaces/AdapterLite/IF_Display.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\AURIX_Practice_07_Display-by-DMA\\TriCore Debug (TASKING)\\',0
+	.byte	12,1,2
+	.word	.L87
+	.byte	3
+	.byte	'DisplayInputBuffer',0,1,109,15
+	.word	.L159
+	.byte	1,5,3
+	.word	DisplayInputBuffer
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('DisplayInputBuffer')
+	.sect	'.debug_abbrev'
+.L124:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('DisplayInputEncoded')
+	.sect	'.debug_info'
+.L125:
+	.word	329
+	.half	3
+	.word	.L126
+	.byte	4,1
+	.byte	'../Level_02_Interfaces/AdapterLite/IF_Display.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\AURIX_Practice_07_Display-by-DMA\\TriCore Debug (TASKING)\\',0
+	.byte	12,1,2
+	.word	.L87
+	.byte	3
+	.byte	'DisplayInputEncoded',0,1,116,7
+	.word	.L160
+	.byte	1,5,3
+	.word	DisplayInputEncoded
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('DisplayInputEncoded')
+	.sect	'.debug_abbrev'
+.L126:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('DisplayOutputBuffer')
+	.sect	'.debug_info'
+.L127:
+	.word	329
+	.half	3
+	.word	.L128
+	.byte	4,1
+	.byte	'../Level_02_Interfaces/AdapterLite/IF_Display.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\AURIX_Practice_07_Display-by-DMA\\TriCore Debug (TASKING)\\',0
+	.byte	12,1,2
+	.word	.L87
+	.byte	3
+	.byte	'DisplayOutputBuffer',0,1,122,22
+	.word	.L161
+	.byte	1,5,3
+	.word	DisplayOutputBuffer
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('DisplayOutputBuffer')
+	.sect	'.debug_abbrev'
+.L128:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('DisplayOutputFIFO')
+	.sect	'.debug_info'
+.L129:
+	.word	328
+	.half	3
+	.word	.L130
+	.byte	4,1
+	.byte	'../Level_02_Interfaces/AdapterLite/IF_Display.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\AURIX_Practice_07_Display-by-DMA\\TriCore Debug (TASKING)\\',0
+	.byte	12,1,2
+	.word	.L87
+	.byte	3
+	.byte	'DisplayOutputFIFO',0,1,128,1,19
+	.word	.L162
+	.byte	1,5,3
+	.word	DisplayOutputFIFO
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('DisplayOutputFIFO')
+	.sect	'.debug_abbrev'
+.L130:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_loc',debug,cluster('Func_Adapter_Display_init')
+	.sect	'.debug_loc'
+.L75:
+	.word	-1,.L76,0,.L132-.L76
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L134:
+	.word	-1,.L76,.L163-.L76,.L6-.L76
+	.half	1
+	.byte	82
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Func_BuildDisplayOutput')
+	.sect	'.debug_loc'
+.L79:
+	.word	-1,.L80,0,.L142-.L80
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L146:
+	.word	-1,.L80,.L166-.L80,.L142-.L80
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L143:
+	.word	-1,.L80,0,.L142-.L80
+	.half	1
+	.byte	100
+	.word	0,0
+.L145:
+	.word	-1,.L80,0,.L142-.L80
+	.half	1
+	.byte	101
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Func_Build_ASCLIN_FIFO_Format')
+	.sect	'.debug_loc'
+.L81:
+	.word	-1,.L82,0,.L147-.L82
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L151:
+	.word	-1,.L82,.L167-.L82,.L147-.L82
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L148:
+	.word	-1,.L82,0,.L147-.L82
+	.half	1
+	.byte	100
+	.word	0,0
+.L150:
+	.word	-1,.L82,0,.L147-.L82
+	.half	1
+	.byte	101
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Func_Convert2Display')
+	.sect	'.debug_loc'
+.L85:
+	.word	-1,.L86,0,.L156-.L86
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L157:
+	.word	-1,.L86,.L168-.L86,.L169-.L86
+	.half	1
+	.byte	82
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Func_EncodeDisplayInput')
+	.sect	'.debug_loc'
+.L77:
+	.word	-1,.L78,0,.L135-.L78
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L141:
+	.word	-1,.L78,.L165-.L78,.L164-.L78
+	.half	1
+	.byte	95
+	.word	.L14-.L78,.L135-.L78
+	.half	1
+	.byte	95
+	.word	0,0
+.L137:
+	.word	-1,.L78,0,.L164-.L78
+	.half	1
+	.byte	100
+	.word	.L14-.L78,.L135-.L78
+	.half	1
+	.byte	100
+	.word	0,0
+.L139:
+	.word	-1,.L78,0,.L164-.L78
+	.half	1
+	.byte	101
+	.word	.L14-.L78,.L135-.L78
+	.half	1
+	.byte	101
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Func_SetDisplay')
+	.sect	'.debug_loc'
+.L83:
+	.word	-1,.L84,0,.L152-.L84
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L154:
+	.word	-1,.L84,0,.L152-.L84
+	.half	1
+	.byte	84
+	.word	0,0
+.L155:
+	.word	-1,.L84,0,.L152-.L84
+	.half	1
+	.byte	85
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L320:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,26,8,27,8,30,8,29,8,28,8,16,8,17,8,24,8,25,8,31,8,32,8,33,8,34,8,35,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('Func_Adapter_Display_init')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L320,.L76,.L132-.L76
+	.sdecl	'.debug_frame',debug,cluster('Func_EncodeDisplayInput')
+	.sect	'.debug_frame'
+	.word	20
+	.word	.L320,.L78,.L135-.L78
+	.byte	8,18,8,19,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('Func_BuildDisplayOutput')
+	.sect	'.debug_frame'
+	.word	20
+	.word	.L320,.L80,.L142-.L80
+	.byte	8,19,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Func_Build_ASCLIN_FIFO_Format')
+	.sect	'.debug_frame'
+	.word	20
+	.word	.L320,.L82,.L147-.L82
+	.byte	8,19,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Func_SetDisplay')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L320,.L84,.L152-.L84
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('Func_Convert2Display')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L320,.L86,.L156-.L86
+	; Module end

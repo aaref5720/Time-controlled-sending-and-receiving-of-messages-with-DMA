@@ -1,0 +1,7 @@
+20:04:03 **** Build of configuration TriCore Debug (TASKING) for project AURIX_Practice_07_Display-by-DMA ****
+amk -j16 all 
+Cannot run program "amk": Code 0x10b: The directory name is invalid.
+
+
+20:04:03 Build Finished. 0 errors, 0 warnings. (took 3ms)
+

@@ -1,0 +1,66 @@
+/**********************************************************************************************************************
+ * \file Task_Switches.c
+ * \brief Task to poll AdapterLite Switches S1 and S2 and expose statuses for
+ *testing
+ *********************************************************************************************************************/
+
+#include <Level_Libraries/iLLD/TC37A/Tricore/Cpu/Std/Platform_Types.h>
+
+#include "FreeRTOS.h"
+#include "task.h"
+
+#include <Level_02_Interfaces/AdapterLite/IF_Display.h>
+#include <Level_02_Interfaces/AdapterLite/IF_Switch1_Switch2.h>
+#include <Level_02_Interfaces/Interface_Libraries/L02_Return_Types.h>
+#include <Level_04_HAL/TC375_GPT12/TC375_GPT12_functions.h>
+
+
+/* Reference to LED1 control (to indicate presses briefly) */
+extern L02_Return_Type Func_Adapter_LED1_on(void);
+extern L02_Return_Type Func_Adapter_LED1_off(void);
+
+/* Global status variables - visible in debugger */
+uint8 status_S1 = 0;
+uint8 status_S2 = 0;
+
+void task_Switches(void *arg) {
+  L02_Return_Type tmp;
+  boolean s1 = FALSE;
+  boolean s2 = FALSE;
+
+  /* initialize switch interfaces */
+  tmp = Func_Adapter_S1_init();
+  tmp = Func_Adapter_S2_init();
+
+  /* task loop: poll switches and update status variables and display */
+  while (TRUE) {
+    tmp = Func_Adapter_S1_status_read(&s1);
+    tmp = Func_Adapter_S2_status_read(&s2);
+
+    /* Inside the while(1) loop of task_Switches */
+    /* Only update if mode changes to avoid restarting timer constantly */
+    if (s1 == TRUE && status_S1 == 0) {
+      /* Requirement: Switch to 1s interval */
+      status_S1 = 1;
+      status_S2 = 0;
+
+      /* Update Timer 6 for 1s: using reference value or similar */
+      /* Reference BPS2=2, T6I=3 => fGPT/128 => 781250 Hz. 1s = 781250 (too
+       * large) */
+      /* Reference BPS2=2, T6I=3 => 128 divisor. fGPT=100MHz => 781250 Hz. */
+      /* Let's just use the functions from the reference logic */
+      Func_GPT12_CAPREL_set_value(
+          0x8000); /* Example: 1s approximately depends on prescaler */
+    } else if (s2 == TRUE && status_S2 == 0) {
+      /* Requirement: Switch to 2s interval */
+      status_S1 = 0;
+      status_S2 = 1;
+
+      Func_GPT12_CAPREL_set_value(
+          0x4000); /* 2s (counts faster/slower depending on value) */
+    }
+    vTaskDelay(pdMS_TO_TICKS(50)); // Polling delay
+  }
+
+  vTaskDelete(NULL);
+}

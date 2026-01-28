@@ -1,0 +1,36 @@
+# Build outputs
+TriCore Debug (TASKING)/*.o
+TriCore Debug (TASKING)/*.src
+TriCore Debug (TASKING)/*.elf
+TriCore Debug (TASKING)/*.hex
+TriCore Debug (TASKING)/*.map
+TriCore Debug (TASKING)/*.d
+TriCore Debug (TASKING)/cc*
+TriCore Debug (TASKING)/llng*
+
+TriCore Release (TASKING)/*.o
+TriCore Release (TASKING)/*.src
+TriCore Release (TASKING)/*.elf
+TriCore Release (TASKING)/*.hex
+TriCore Release (TASKING)/*.map
+TriCore Release (TASKING)/*.d
+
+# IDE files
+.settings/
+.project
+.cproject
+*.launch
+
+# winIDEA workspace files
+winIDEA/*.xgrf
+winIDEA/*.xjrf
+winIDEA/*.xqrf
+
+# Temporary files
+*.bak
+*.tmp
+*~
+
+# OS files
+Thumbs.db
+.DS_Store

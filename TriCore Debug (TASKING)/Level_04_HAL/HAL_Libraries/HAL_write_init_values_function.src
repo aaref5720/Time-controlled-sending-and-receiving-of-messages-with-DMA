@@ -1,0 +1,286 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
+	.compiler_invocation	"ctc -f cc26284a --dep-file=Level_04_HAL/HAL_Libraries/HAL_write_init_values_function.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc37x -D__CPU_TC37X__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc37x -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_02_Interfaces -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_02_Interfaces\\\\AdapterLite -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_02_Interfaces\\\\Interface_Libraries -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_02_Interfaces\\\\TC375_IntVectorTable_CPU0 -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_03_OS -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_03_OS\\\\FreeRTOS -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_03_OS\\\\FreeRTOS\\\\include -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_03_OS\\\\FreeRTOS\\\\portable -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_03_OS\\\\FreeRTOS\\\\portable\\\\GCC -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_03_OS\\\\FreeRTOS\\\\portable\\\\GCC\\\\TC3 -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_03_OS\\\\FreeRTOS\\\\portable\\\\Tasking -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_03_OS\\\\FreeRTOS\\\\portable\\\\Tasking\\\\TC3 -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_04_HAL -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_04_HAL\\\\HAL_Libraries -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_04_HAL\\\\TC375_CAN -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_04_HAL\\\\TC375_DMA -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_04_HAL\\\\TC375_GPT12 -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_04_HAL\\\\TC375_SCU -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Configurations -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Infra -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Infra\\\\Platform -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Infra\\\\Sfr -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Infra\\\\Sfr\\\\TC37A -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Infra\\\\Ssw -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Infra\\\\Ssw\\\\TC37A -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Infra\\\\Ssw\\\\TC37A\\\\Tricore -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Service -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Service\\\\CpuGeneric -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Service\\\\CpuGeneric\\\\If -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Comm -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\General -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Time -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin\\\\Asc -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin\\\\Lin -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin\\\\Spi -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can\\\\Can -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6 -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\Icu -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\PwmBc -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\PwmHl -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\TPwm -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\Timer -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\TimerWithTrigger -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Convctrl -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Convctrl\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Trap -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma\\\\Dma -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Edsadc -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Edsadc\\\\Edsadc -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Edsadc\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Adc -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Fce -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Fce\\\\Crc -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Fce\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Flash -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Flash\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Geth -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Geth\\\\Eth -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Geth\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12 -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12\\\\IncrEnc -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\I2c -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\I2c\\\\I2c -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\I2c\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Iom -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Iom\\\\Driver -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Iom\\\\Iom -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Iom\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port\\\\Io -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi\\\\SpiMaster -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi\\\\SpiSlave -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Smu -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Smu\\\\Smu -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Smu\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm\\\\Timer -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Impl -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Lib -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Lib\\\\DataHandling -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Lib\\\\InternalMux -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_PinMap -g3 -w544 -w557 -t2 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2012 -o Level_04_HAL/HAL_Libraries/HAL_write_init_values_function.src ../Level_04_HAL/HAL_Libraries/HAL_write_init_values_function.c"
+	.compiler_name		"ctc"
+	;source	'../Level_04_HAL/HAL_Libraries/HAL_write_init_values_function.c'
+
+	
+$TC162
+	
+	.sdecl	'.text.HAL_write_init_values_function.Func_HAL_write_init_values',code,cluster('Func_HAL_write_init_values')
+	.sect	'.text.HAL_write_init_values_function.Func_HAL_write_init_values'
+	.align	2
+	
+	.global	Func_HAL_write_init_values
+; Function Func_HAL_write_init_values
+.L6:
+Func_HAL_write_init_values:	.type	func
+	mov	d1,#0
+.L25:
+	j	.L2
+.L3:
+	mul	d15,d1,#12
+	addsc.a	a15,a4,d15,#0
+.L35:
+	ld.a	a15,[a15]
+.L36:
+	ld.w	d0,[a15]
+.L26:
+	mul	d15,d1,#12
+	addsc.a	a15,a4,d15,#0
+.L37:
+	ld.w	d15,[a15]4
+.L38:
+	or	d0,d15
+.L39:
+	mul	d15,d1,#12
+	addsc.a	a15,a4,d15,#0
+.L40:
+	ld.w	d15,[a15]8
+.L41:
+	and	d0,d15
+.L42:
+	mul	d15,d1,#12
+	addsc.a	a15,a4,d15,#0
+.L43:
+	ld.a	a15,[a15]
+.L44:
+	st.w	[a15],d0
+.L45:
+	add	d1,#1
+.L2:
+	jlt	d1,d4,.L3
+.L46:
+	mov	d2,#0
+.L47:
+	j	.L4
+.L4:
+	ret
+.L17:
+	
+__Func_HAL_write_init_values_function_end:
+	.size	Func_HAL_write_init_values,__Func_HAL_write_init_values_function_end-Func_HAL_write_init_values
+.L15:
+	; End of function
+	
+	.calls	'Func_HAL_write_init_values','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L8:
+	.word	579
+	.half	3
+	.word	.L9
+	.byte	4
+.L7:
+	.byte	1
+	.byte	'../Level_04_HAL/HAL_Libraries/HAL_write_init_values_function.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\AURIX_Practice_07_Display-by-DMA\\TriCore Debug (TASKING)\\',0
+	.byte	12,1
+	.word	.L10
+.L16:
+	.byte	2
+	.byte	'_HAL_Return_Type',0,1,67,14,1,3
+	.byte	'HAL_E_OK',0,0,3
+	.byte	'HAL_E_NOT_OK',0,1,0
+.L22:
+	.byte	4
+	.byte	'unsigned long int',0,4,7,5
+	.word	360
+	.byte	6
+	.byte	'_Register32_Init_Entry',0,2,57,16,12,7
+	.byte	'Address',0
+	.word	381
+	.byte	4,2,35,0,7
+	.byte	'Mask_SetBit',0
+	.word	360
+	.byte	4,2,35,4,7
+	.byte	'Mask_ClearBit',0
+	.word	360
+	.byte	4,2,35,8,0
+.L18:
+	.byte	5
+	.word	386
+.L20:
+	.byte	4
+	.byte	'int',0,4,5,8,1,5
+	.word	488
+	.byte	9
+	.byte	'__codeptr',0,3,1,1
+	.word	490
+	.byte	9
+	.byte	'uint32',0,4,116,29
+	.word	360
+	.byte	9
+	.byte	'Register32_Init_Entry',0,2,62,3
+	.word	386
+	.byte	9
+	.byte	'HAL_Return_Type',0,1,71,3
+	.word	311
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L9:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,4,1,3,8,58,15,59,15,57,15,11,15,0,0,3,40,0,3,8,28,13,0
+	.byte	0,4,36,0,3,8,11,15,62,15,0,0,5,15,0,73,19,0,0,6,19,1,3,8,58,15,59,15,57,15,11,15,0,0,7,13,0,3,8,73,19
+	.byte	11,15,56,9,0,0,8,21,0,54,15,0,0,9,22,0,3,8,58,15,59,15,57,15,73,19,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L10:
+	.word	.L28-.L27
+.L27:
+	.half	3
+	.word	.L30-.L29
+.L29:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Level_04_HAL\\HAL_Libraries\\HAL_Return_Types.h',0,0,0,0
+	.byte	'..\\Level_04_HAL\\HAL_Libraries\\HAL_Init_Struct.h',0,0,0,0
+	.byte	'../Level_04_HAL/HAL_Libraries/HAL_write_init_values_function.c',0,0,0,0
+	.byte	'C:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\Level_Libraries\\iLLD\\TC37A\\Tricore\\Cpu\\Std\\Platform_Types.h',0
+	.byte	0,0,0,0
+.L30:
+.L28:
+	.sdecl	'.debug_info',debug,cluster('Func_HAL_write_init_values')
+	.sect	'.debug_info'
+.L11:
+	.word	457
+	.half	3
+	.word	.L12
+	.byte	4,1
+	.byte	'../Level_04_HAL/HAL_Libraries/HAL_write_init_values_function.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\AURIX_Practice_07_Display-by-DMA\\TriCore Debug (TASKING)\\',0
+	.byte	12,1
+	.word	.L14,.L13
+	.byte	2
+	.word	.L7
+	.byte	3
+	.byte	'Func_HAL_write_init_values',0,1,58,17
+	.word	.L16
+	.byte	1,1,1
+	.word	.L6,.L17,.L5
+	.byte	4
+	.byte	'init_table',0,1,58,66
+	.word	.L18,.L19
+	.byte	4
+	.byte	'table_length',0,1,58,84
+	.word	.L20,.L21
+	.byte	5
+	.word	.L6,.L17
+	.byte	6
+	.byte	'tmp1',0,1,60,12
+	.word	.L22,.L23
+	.byte	6
+	.byte	'i',0,1,61,9
+	.word	.L20,.L24
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Func_HAL_write_init_values')
+	.sect	'.debug_abbrev'
+.L12:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Func_HAL_write_init_values')
+	.sect	'.debug_line'
+.L13:
+	.word	.L32-.L31
+.L31:
+	.half	3
+	.word	.L34-.L33
+.L33:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../Level_04_HAL/HAL_Libraries/HAL_write_init_values_function.c',0,0,0,0,0
+.L34:
+	.byte	5,12,7,0,5,2
+	.word	.L6
+	.byte	3,62,1,5,33,9
+	.half	.L25-.L6
+	.byte	1,5,28,9
+	.half	.L3-.L25
+	.byte	3,2,1,5,31,9
+	.half	.L35-.L3
+	.byte	1,5,16,9
+	.half	.L36-.L35
+	.byte	1,5,33,9
+	.half	.L26-.L36
+	.byte	3,5,1,5,36,9
+	.half	.L37-.L26
+	.byte	1,5,21,9
+	.half	.L38-.L37
+	.byte	1,5,33,9
+	.half	.L39-.L38
+	.byte	3,1,1,5,36,9
+	.half	.L40-.L39
+	.byte	1,5,21,9
+	.half	.L41-.L40
+	.byte	1,9
+	.half	.L42-.L41
+	.byte	3,5,1,5,24,9
+	.half	.L43-.L42
+	.byte	1,5,34,9
+	.half	.L44-.L43
+	.byte	1,5,36,9
+	.half	.L45-.L44
+	.byte	3,115,1,5,33,9
+	.half	.L2-.L45
+	.byte	1,5,12,7,9
+	.half	.L46-.L2
+	.byte	3,16,1,5,5,9
+	.half	.L47-.L46
+	.byte	1,5,1,9
+	.half	.L4-.L47
+	.byte	3,1,1,7,9
+	.half	.L15-.L4
+	.byte	0,1,1
+.L32:
+	.sdecl	'.debug_ranges',debug,cluster('Func_HAL_write_init_values')
+	.sect	'.debug_ranges'
+.L14:
+	.word	-1,.L6,0,.L15-.L6,0,0
+	.sdecl	'.debug_pubnames',debug
+	.sect	'.debug_pubnames'
+	.word	45
+	.half	2
+	.word	.L11,461,320
+	.byte	'Func_HAL_write_init_values',0
+	.word	0
+	.sdecl	'.debug_loc',debug,cluster('Func_HAL_write_init_values')
+	.sect	'.debug_loc'
+.L5:
+	.word	-1,.L6,0,.L17-.L6
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L24:
+	.word	-1,.L6,.L25-.L6,.L17-.L6
+	.half	1
+	.byte	81
+	.word	0,0
+.L19:
+	.word	-1,.L6,0,.L17-.L6
+	.half	1
+	.byte	100
+	.word	0,0
+.L21:
+	.word	-1,.L6,0,.L17-.L6
+	.half	1
+	.byte	84
+	.word	0,0
+.L23:
+	.word	-1,.L6,.L26-.L6,.L2-.L6
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L48:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,26,8,27,8,30,8,29,8,28,8,16,8,17,8,24,8,25,8,31,8,32,8,33,8,34,8,35,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('Func_HAL_write_init_values')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L48,.L6,.L17-.L6
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	; Module end

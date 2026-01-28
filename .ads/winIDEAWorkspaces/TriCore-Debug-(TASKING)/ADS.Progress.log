@@ -1,0 +1,27 @@
+The device features of TC375TP are not fully unlocked. See https://kb.tasking.com/KB/76/Article/521
+LOADING	App
+LOADING	C:\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\WS_AURIX_Practice_07_Display-by-DMA_Solution\AURIX_Practice_07_Display-by-DMA\TriCore Debug (TASKING)\AURIX_Practice_07_Display-by-DMA.elf
+EMULATION	Probe - System; Root
+EMULATION	Initial debug frequency set
+EMULATION	Asserting reset
+EMULATION	Finished connecting to SoC
+EMULATION	Releasing reset
+EMULATION	Initialization script (if any) done
+No RAM which needs initialization found
+EMULATION	Final debug frequency set
+EMULATION	SoC identification match OK
+SoC	Detected device: TC370 series, rev. AA
+EMULATION	STARTED
+PROGRAMMING 	196235 bytes
+Image checker	Startup address check is disabled.
+PROGRAMMING	Infineon TC37x_PFLASH_6MB (14 sectors)
+SoC	Detected device: TC370 series, rev. AA
+SoC	Detected device: TC370 series, rev. AA
+SoC	SMP requirements not satisfied. Check multi-core synchronization settings.
+SoC	Detected device: TC370 series, rev. AA
+SoC	Detected device: TC370 series, rev. AA
+SoC	Detected device: TC370 series, rev. AA
+SoC	SMP requirements not satisfied. Check multi-core synchronization settings.
+SoC	Detected device: TC370 series, rev. AA
+SoC	Detected device: TC370 series, rev. AA
+EMULATION	END - Without cleanup

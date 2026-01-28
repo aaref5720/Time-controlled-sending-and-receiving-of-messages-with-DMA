@@ -1,0 +1,100 @@
+19:43:18 **** Clean-only build of configuration TriCore Debug (TASKING) for project AURIX_Practice_07_Display-by-DMA ****
+amk -j16 clean 
+Cannot run program "amk": Code 0x10b: The directory name is invalid.
+
+Build started...
+19:43:20 **** Clean-only build of configuration TriCore Debug (TASKING) for project AURIX_Practice_07_Display-by-DMA ****
+amk -j16 clean 
+Cannot run program "amk": Code 0x10b: The directory name is invalid.
+
+19:43:20 **** Build of configuration TriCore Debug (TASKING) for project AURIX_Practice_07_Display-by-DMA ****
+amk -j16 all 
+Cannot run program "amk": Code 0x10b: The directory name is invalid.
+
+19:44:01 **** Clean-only build of configuration TriCore Debug (TASKING) for project AURIX_Practice_07_Display-by-DMA ****
+amk -j16 clean 
+Cannot run program "amk": Code 0x10b: The directory name is invalid.
+
+Build started...
+19:44:03 **** Build of configuration TriCore Debug (TASKING) for project AURIX_Practice_07_Display-by-DMA ****
+amk -j16 all 
+Cannot run program "amk": Code 0x10b: The directory name is invalid.
+
+19:50:49 **** Clean-only build of configuration TriCore Debug (TASKING) for project AURIX_Practice_07_Display-by-DMA ****
+amk -j16 clean 
+Cannot run program "amk": Code 0x10b: The directory name is invalid.
+
+Build started...
+19:50:52 **** Build of configuration TriCore Debug (TASKING) for project AURIX_Practice_07_Display-by-DMA ****
+amk -j16 all 
+Cannot run program "amk": Code 0x10b: The directory name is invalid.
+
+19:55:44 **** Clean-only build of configuration TriCore Debug (TASKING) for project AURIX_Practice_07_Display-by-DMA ****
+amk -j16 clean 
+Cannot run program "amk": Code 0x10b: The directory name is invalid.
+
+Build started...
+19:55:45 **** Build of configuration TriCore Debug (TASKING) for project AURIX_Practice_07_Display-by-DMA ****
+amk -j16 all 
+Cannot run program "amk": Code 0x10b: The directory name is invalid.
+
+19:55:54 **** Clean-only build of configuration TriCore Debug (TASKING) for project AURIX_Practice_07_Display-by-DMA ****
+amk -j16 clean 
+Cannot run program "amk": Code 0x10b: The directory name is invalid.
+
+Build started...
+19:55:56 **** Build of configuration TriCore Debug (TASKING) for project AURIX_Practice_07_Display-by-DMA ****
+amk -j16 all 
+Cannot run program "amk": Code 0x10b: The directory name is invalid.
+
+19:57:57 **** Clean-only build of configuration TriCore Debug (TASKING) for project AURIX_Practice_07_Display-by-DMA ****
+amk -j16 clean 
+Cannot run program "amk": Code 0x10b: The directory name is invalid.
+
+Build started...
+19:57:59 **** Build of configuration TriCore Debug (TASKING) for project AURIX_Practice_07_Display-by-DMA ****
+amk -j16 all 
+Cannot run program "amk": Code 0x10b: The directory name is invalid.
+
+19:59:39 **** Clean-only build of configuration TriCore Debug (TASKING) for project AURIX_Practice_07_Display-by-DMA ****
+amk -j16 clean 
+Cannot run program "amk": Code 0x10b: The directory name is invalid.
+
+Build started...
+19:59:41 **** Build of configuration TriCore Debug (TASKING) for project AURIX_Practice_07_Display-by-DMA ****
+amk -j16 all 
+Cannot run program "amk": Code 0x10b: The directory name is invalid.
+
+20:00:33 **** Clean-only build of configuration TriCore Debug (TASKING) for project AURIX_Practice_07_Display-by-DMA ****
+"C:\\Infineon\\AURIX-Studio-1.10.28\\tools\\Compilers\\Tasking_1.1r8\\ctc\\bin\\amk.exe" -j16 clean 
+Cannot run program "C:\Infineon\AURIX-Studio-1.10.28\tools\Compilers\Tasking_1.1r8\ctc\bin\amk.exe": Code 0x10b: The directory name is invalid.
+
+
+Error: Program "C:\Infineon\AURIX-Studio-1.10.28\tools\Compilers\Tasking_1.1r8\ctc\bin\amk.exe" not found in PATH
+PATH=[C:\Infineon\AURIX-Studio-1.10.28\tools\Compilers\Tasking_1.1r8\ctc\bin;C:/Infineon/AURIX-Studio-1.10.28//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.11.v20240426-1830/jre/bin/server;C:/Infineon/AURIX-Studio-1.10.28//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.11.v20240426-1830/jre/bin;C:\Program Files\ImageMagick-7.1.2-Q16-HDRI;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\Amr\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\Scripts;C:\Program Files\dotnet\;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files\cursor\resources\app\bin;C:\Program Files\Go\bin;C:\Infineon\LauncherService;C:\Users\Amr\AppData\Local\Programs\Python\Launcher\;C:\Users\Amr\AppData\Local\Microsoft\WindowsApps;C:\Users\Amr\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Amr\go\bin;C:\Users\Amr\Infineon\LauncherService;C:\Infineon\AURIX-Studio-1.10.28]
+Build started...
+20:00:35 **** Build of configuration TriCore Debug (TASKING) for project AURIX_Practice_07_Display-by-DMA ****
+"C:\\Infineon\\AURIX-Studio-1.10.28\\tools\\Compilers\\Tasking_1.1r8\\ctc\\bin\\amk.exe" -j16 all 
+Cannot run program "C:\Infineon\AURIX-Studio-1.10.28\tools\Compilers\Tasking_1.1r8\ctc\bin\amk.exe": Code 0x10b: The directory name is invalid.
+
+
+Error: Program "C:\Infineon\AURIX-Studio-1.10.28\tools\Compilers\Tasking_1.1r8\ctc\bin\amk.exe" not found in PATH
+PATH=[C:\Infineon\AURIX-Studio-1.10.28\tools\Compilers\Tasking_1.1r8\ctc\bin;C:/Infineon/AURIX-Studio-1.10.28//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.11.v20240426-1830/jre/bin/server;C:/Infineon/AURIX-Studio-1.10.28//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.11.v20240426-1830/jre/bin;C:\Program Files\ImageMagick-7.1.2-Q16-HDRI;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\Amr\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\Scripts;C:\Program Files\dotnet\;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files\cursor\resources\app\bin;C:\Program Files\Go\bin;C:\Infineon\LauncherService;C:\Users\Amr\AppData\Local\Programs\Python\Launcher\;C:\Users\Amr\AppData\Local\Microsoft\WindowsApps;C:\Users\Amr\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Amr\go\bin;C:\Users\Amr\Infineon\LauncherService;C:\Infineon\AURIX-Studio-1.10.28]
+20:02:02 **** Clean-only build of configuration TriCore Debug (TASKING) for project AURIX_Practice_07_Display-by-DMA ****
+amk -j16 clean 
+Cannot run program "amk": Code 0x10b: The directory name is invalid.
+
+Build started...
+20:02:04 **** Build of configuration TriCore Debug (TASKING) for project AURIX_Practice_07_Display-by-DMA ****
+amk -j16 all 
+Cannot run program "amk": Code 0x10b: The directory name is invalid.
+
+20:04:02 **** Clean-only build of configuration TriCore Debug (TASKING) for project AURIX_Practice_07_Display-by-DMA ****
+amk -j16 clean 
+Cannot run program "amk": Code 0x10b: The directory name is invalid.
+
+Build started...
+20:04:03 **** Build of configuration TriCore Debug (TASKING) for project AURIX_Practice_07_Display-by-DMA ****
+amk -j16 all 
+Cannot run program "amk": Code 0x10b: The directory name is invalid.
+

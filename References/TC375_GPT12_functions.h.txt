@@ -1,0 +1,12 @@
+#ifndef TC375_GPT12_FUNCTIONS_H_
+#define TC375_GPT12_FUNCTIONS_H_
+
+#include <Level_Libraries/iLLD/TC37A/Tricore/Cpu/Std/Platform_Types.h>
+
+void Func_GPT12_Module_Init(void);
+void Func_GPT12_T3_Init_Counter(void);
+void Func_GPT12_T6_Init_Timer(void);
+void Func_GPT12_T6_Set_Period_1s(void);
+void Func_GPT12_T6_Set_Period_2s(void);
+
+#endif /* TC375_GPT12_FUNCTIONS_H_ */

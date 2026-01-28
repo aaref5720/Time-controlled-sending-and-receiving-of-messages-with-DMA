@@ -1,0 +1,1805 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
+	.compiler_invocation	"ctc -f cc21688a --dep-file=Level_04_HAL/TC375_IR/TC375_SRN_GPT12_T6_functions.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc37x -D__CPU_TC37X__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc37x -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_02_Interfaces -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_02_Interfaces\\\\AdapterLite -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_02_Interfaces\\\\Interface_Libraries -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_02_Interfaces\\\\TC375_IntVectorTable_CPU0 -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_03_OS -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_03_OS\\\\FreeRTOS -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_03_OS\\\\FreeRTOS\\\\include -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_03_OS\\\\FreeRTOS\\\\portable -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_03_OS\\\\FreeRTOS\\\\portable\\\\GCC -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_03_OS\\\\FreeRTOS\\\\portable\\\\GCC\\\\TC3 -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_03_OS\\\\FreeRTOS\\\\portable\\\\Tasking -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_03_OS\\\\FreeRTOS\\\\portable\\\\Tasking\\\\TC3 -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_04_HAL -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_04_HAL\\\\HAL_Libraries -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_04_HAL\\\\TC375_CAN -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_04_HAL\\\\TC375_DMA -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_04_HAL\\\\TC375_GPT12 -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_04_HAL\\\\TC375_SCU -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Configurations -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Infra -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Infra\\\\Platform -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Infra\\\\Sfr -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Infra\\\\Sfr\\\\TC37A -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Infra\\\\Ssw -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Infra\\\\Ssw\\\\TC37A -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Infra\\\\Ssw\\\\TC37A\\\\Tricore -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Service -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Service\\\\CpuGeneric -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Service\\\\CpuGeneric\\\\If -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Comm -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\General -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Time -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin\\\\Asc -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin\\\\Lin -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin\\\\Spi -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can\\\\Can -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6 -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\Icu -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\PwmBc -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\PwmHl -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\TPwm -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\Timer -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\TimerWithTrigger -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Convctrl -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Convctrl\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Trap -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma\\\\Dma -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Edsadc -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Edsadc\\\\Edsadc -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Edsadc\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Adc -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Fce -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Fce\\\\Crc -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Fce\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Flash -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Flash\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Geth -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Geth\\\\Eth -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Geth\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12 -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12\\\\IncrEnc -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\I2c -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\I2c\\\\I2c -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\I2c\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Iom -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Iom\\\\Driver -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Iom\\\\Iom -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Iom\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port\\\\Io -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi\\\\SpiMaster -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi\\\\SpiSlave -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Smu -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Smu\\\\Smu -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Smu\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm\\\\Std -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm\\\\Timer -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Impl -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Lib -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Lib\\\\DataHandling -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Lib\\\\InternalMux -IC:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\\\Level_Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_PinMap -g3 -w544 -w557 -t2 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2012 -o Level_04_HAL/TC375_IR/TC375_SRN_GPT12_T6_functions.src ../Level_04_HAL/TC375_IR/TC375_SRN_GPT12_T6_functions.c"
+	.compiler_name		"ctc"
+	;source	'../Level_04_HAL/TC375_IR/TC375_SRN_GPT12_T6_functions.c'
+
+	
+$TC162
+	
+	.sdecl	'.text.TC375_SRN_GPT12_T6_functions.Func_TC375_SRN_GPT12_T6_init',code,cluster('Func_TC375_SRN_GPT12_T6_init')
+	.sect	'.text.TC375_SRN_GPT12_T6_functions.Func_TC375_SRN_GPT12_T6_init'
+	.align	2
+	
+	.global	Func_TC375_SRN_GPT12_T6_init
+; Function Func_TC375_SRN_GPT12_T6_init
+.L17:
+Func_TC375_SRN_GPT12_T6_init:	.type	func
+	movh.a	a15,#61444
+	ld.bu	d15,[a15]@los(0xf00382f4)
+.L89:
+	insert	d15,d15,#1,#0,#8
+	movh.a	a15,#61444
+	st.b	[a15]@los(0xf00382f4),d15
+.L90:
+	movh.a	a15,#61444
+	ld.bu	d15,[a15]@los(0xf00382f5)
+.L91:
+	insert	d15,d15,#0,#2,#1
+	movh.a	a15,#61444
+	st.b	[a15]@los(0xf00382f5),d15
+.L92:
+	movh.a	a15,#61444
+	ld.bu	d15,[a15]@los(0xf00382f5)
+.L93:
+	insert	d15,d15,#1,#3,#3
+	movh.a	a15,#61444
+	st.b	[a15]@los(0xf00382f5),d15
+.L94:
+	movh.a	a15,#61444
+	ld.bu	d15,[a15]@los(0xf00382f7)
+.L95:
+	or	d15,#2
+	movh.a	a15,#61444
+	st.b	[a15]@los(0xf00382f7),d15
+.L96:
+	movh.a	a15,#61444
+	ld.bu	d15,[a15]@los(0xf00382f7)
+.L97:
+	insert	d15,d15,#0,#2,#1
+	movh.a	a15,#61444
+	st.b	[a15]@los(0xf00382f7),d15
+.L98:
+	movh.a	a15,#61444
+	ld.bu	d15,[a15]@los(0xf00382f7)
+.L99:
+	or	d15,#16
+	movh.a	a15,#61444
+	st.b	[a15]@los(0xf00382f7),d15
+.L100:
+	movh.a	a15,#61444
+	ld.bu	d15,[a15]@los(0xf00382f7)
+.L101:
+	or	d15,#64
+	movh.a	a15,#61444
+	st.b	[a15]@los(0xf00382f7),d15
+.L102:
+	mov	d2,#0
+.L75:
+	j	.L2
+.L2:
+	ret
+.L63:
+	
+__Func_TC375_SRN_GPT12_T6_init_function_end:
+	.size	Func_TC375_SRN_GPT12_T6_init,__Func_TC375_SRN_GPT12_T6_init_function_end-Func_TC375_SRN_GPT12_T6_init
+.L36:
+	; End of function
+	
+	.sdecl	'.text.TC375_SRN_GPT12_T6_functions.Func_TC375_SRN_GPT12_T2_init',code,cluster('Func_TC375_SRN_GPT12_T2_init')
+	.sect	'.text.TC375_SRN_GPT12_T6_functions.Func_TC375_SRN_GPT12_T2_init'
+	.align	2
+	
+	.global	Func_TC375_SRN_GPT12_T2_init
+; Function Func_TC375_SRN_GPT12_T2_init
+.L19:
+Func_TC375_SRN_GPT12_T2_init:	.type	func
+	movh.a	a15,#61444
+	ld.bu	d15,[a15]@los(0xf00382e4)
+.L107:
+	insert	d15,d15,#0,#0,#8
+	movh.a	a15,#61444
+	st.b	[a15]@los(0xf00382e4),d15
+.L108:
+	movh.a	a15,#61444
+	ld.bu	d15,[a15]@los(0xf00382e5)
+.L109:
+	insert	d15,d15,#0,#2,#1
+	movh.a	a15,#61444
+	st.b	[a15]@los(0xf00382e5),d15
+.L110:
+	movh.a	a15,#61444
+	ld.bu	d15,[a15]@los(0xf00382e5)
+.L111:
+	insert	d15,d15,#1,#3,#3
+	movh.a	a15,#61444
+	st.b	[a15]@los(0xf00382e5),d15
+.L112:
+	movh.a	a15,#61444
+	ld.bu	d15,[a15]@los(0xf00382e7)
+.L113:
+	or	d15,#2
+	movh.a	a15,#61444
+	st.b	[a15]@los(0xf00382e7),d15
+.L114:
+	movh.a	a15,#61444
+	ld.bu	d15,[a15]@los(0xf00382e7)
+.L115:
+	insert	d15,d15,#0,#2,#1
+	movh.a	a15,#61444
+	st.b	[a15]@los(0xf00382e7),d15
+.L116:
+	movh.a	a15,#61444
+	ld.bu	d15,[a15]@los(0xf00382e7)
+.L117:
+	or	d15,#16
+	movh.a	a15,#61444
+	st.b	[a15]@los(0xf00382e7),d15
+.L118:
+	movh.a	a15,#61444
+	ld.bu	d15,[a15]@los(0xf00382e7)
+.L119:
+	or	d15,#64
+	movh.a	a15,#61444
+	st.b	[a15]@los(0xf00382e7),d15
+.L120:
+	mov	d2,#0
+.L76:
+	j	.L3
+.L3:
+	ret
+.L65:
+	
+__Func_TC375_SRN_GPT12_T2_init_function_end:
+	.size	Func_TC375_SRN_GPT12_T2_init,__Func_TC375_SRN_GPT12_T2_init_function_end-Func_TC375_SRN_GPT12_T2_init
+.L41:
+	; End of function
+	
+	.sdecl	'.text.TC375_SRN_GPT12_T6_functions.Func_TC375_SRN_GPT12_T2_enable',code,cluster('Func_TC375_SRN_GPT12_T2_enable')
+	.sect	'.text.TC375_SRN_GPT12_T6_functions.Func_TC375_SRN_GPT12_T2_enable'
+	.align	2
+	
+	.global	Func_TC375_SRN_GPT12_T2_enable
+; Function Func_TC375_SRN_GPT12_T2_enable
+.L21:
+Func_TC375_SRN_GPT12_T2_enable:	.type	func
+	movh.a	a15,#61444
+	ld.bu	d15,[a15]@los(0xf00382e5)
+.L125:
+	or	d15,#4
+	movh.a	a15,#61444
+	st.b	[a15]@los(0xf00382e5),d15
+.L126:
+	movh.a	a15,#61444
+	ld.bu	d15,[a15]@los(0xf00382e5)
+	extr.u	d15,d15,#2,#1
+.L127:
+	jne	d15,#1,.L4
+.L128:
+	mov	d2,#0
+.L77:
+	j	.L5
+.L4:
+	mov	d2,#1
+.L5:
+	j	.L6
+.L6:
+	ret
+.L67:
+	
+__Func_TC375_SRN_GPT12_T2_enable_function_end:
+	.size	Func_TC375_SRN_GPT12_T2_enable,__Func_TC375_SRN_GPT12_T2_enable_function_end-Func_TC375_SRN_GPT12_T2_enable
+.L46:
+	; End of function
+	
+	.sdecl	'.text.TC375_SRN_GPT12_T6_functions.Func_TC375_SRN_GPT12_T2_clear',code,cluster('Func_TC375_SRN_GPT12_T2_clear')
+	.sect	'.text.TC375_SRN_GPT12_T6_functions.Func_TC375_SRN_GPT12_T2_clear'
+	.align	2
+	
+	.global	Func_TC375_SRN_GPT12_T2_clear
+; Function Func_TC375_SRN_GPT12_T2_clear
+.L23:
+Func_TC375_SRN_GPT12_T2_clear:	.type	func
+	movh.a	a15,#61444
+	ld.bu	d15,[a15]@los(0xf00382e7)
+.L133:
+	or	d15,#2
+	movh.a	a15,#61444
+	st.b	[a15]@los(0xf00382e7),d15
+.L134:
+	movh.a	a15,#61444
+	ld.bu	d15,[a15]@los(0xf00382e7)
+.L135:
+	jnz.t	d15:0,.L7
+.L136:
+	mov	d2,#0
+.L78:
+	j	.L8
+.L7:
+	mov	d2,#1
+.L8:
+	j	.L9
+.L9:
+	ret
+.L69:
+	
+__Func_TC375_SRN_GPT12_T2_clear_function_end:
+	.size	Func_TC375_SRN_GPT12_T2_clear,__Func_TC375_SRN_GPT12_T2_clear_function_end-Func_TC375_SRN_GPT12_T2_clear
+.L51:
+	; End of function
+	
+	.sdecl	'.text.TC375_SRN_GPT12_T6_functions.Func_TC375_SRN_GPT12_T6_enable',code,cluster('Func_TC375_SRN_GPT12_T6_enable')
+	.sect	'.text.TC375_SRN_GPT12_T6_functions.Func_TC375_SRN_GPT12_T6_enable'
+	.align	2
+	
+	.global	Func_TC375_SRN_GPT12_T6_enable
+; Function Func_TC375_SRN_GPT12_T6_enable
+.L25:
+Func_TC375_SRN_GPT12_T6_enable:	.type	func
+	movh.a	a15,#61444
+	ld.bu	d15,[a15]@los(0xf00382f5)
+.L141:
+	or	d15,#4
+	movh.a	a15,#61444
+	st.b	[a15]@los(0xf00382f5),d15
+.L142:
+	movh.a	a15,#61444
+	ld.bu	d15,[a15]@los(0xf00382f5)
+	extr.u	d15,d15,#2,#1
+.L143:
+	jne	d15,#1,.L10
+.L144:
+	mov	d2,#0
+.L79:
+	j	.L11
+.L10:
+	mov	d2,#1
+.L11:
+	j	.L12
+.L12:
+	ret
+.L71:
+	
+__Func_TC375_SRN_GPT12_T6_enable_function_end:
+	.size	Func_TC375_SRN_GPT12_T6_enable,__Func_TC375_SRN_GPT12_T6_enable_function_end-Func_TC375_SRN_GPT12_T6_enable
+.L56:
+	; End of function
+	
+	.sdecl	'.text.TC375_SRN_GPT12_T6_functions.Func_TC375_IR_SRN_GPT12_T6_clear',code,cluster('Func_TC375_IR_SRN_GPT12_T6_clear')
+	.sect	'.text.TC375_SRN_GPT12_T6_functions.Func_TC375_IR_SRN_GPT12_T6_clear'
+	.align	2
+	
+	.global	Func_TC375_IR_SRN_GPT12_T6_clear
+; Function Func_TC375_IR_SRN_GPT12_T6_clear
+.L27:
+Func_TC375_IR_SRN_GPT12_T6_clear:	.type	func
+	movh.a	a15,#61444
+	ld.bu	d15,[a15]@los(0xf00382f7)
+.L149:
+	or	d15,#2
+	movh.a	a15,#61444
+	st.b	[a15]@los(0xf00382f7),d15
+.L150:
+	movh.a	a15,#61444
+	ld.bu	d15,[a15]@los(0xf00382f7)
+.L151:
+	jnz.t	d15:0,.L13
+.L152:
+	mov	d2,#0
+.L80:
+	j	.L14
+.L13:
+	mov	d2,#1
+.L14:
+	j	.L15
+.L15:
+	ret
+.L73:
+	
+__Func_TC375_IR_SRN_GPT12_T6_clear_function_end:
+	.size	Func_TC375_IR_SRN_GPT12_T6_clear,__Func_TC375_IR_SRN_GPT12_T6_clear_function_end-Func_TC375_IR_SRN_GPT12_T6_clear
+.L61:
+	; End of function
+	
+	.calls	'Func_TC375_SRN_GPT12_T6_init','',0
+	.calls	'Func_TC375_SRN_GPT12_T2_init','',0
+	.calls	'Func_TC375_SRN_GPT12_T2_enable','',0
+	.calls	'Func_TC375_SRN_GPT12_T2_clear','',0
+	.calls	'Func_TC375_SRN_GPT12_T6_enable','',0
+	.calls	'Func_TC375_IR_SRN_GPT12_T6_clear','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L29:
+	.word	5701
+	.half	3
+	.word	.L30
+	.byte	4
+.L28:
+	.byte	1
+	.byte	'../Level_04_HAL/TC375_IR/TC375_SRN_GPT12_T6_functions.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\AURIX_Practice_07_Display-by-DMA\\TriCore Debug (TASKING)\\',0
+	.byte	12,1
+	.word	.L31
+.L62:
+	.byte	2
+	.byte	'_HAL_Return_Type',0,1,67,14,1,3
+	.byte	'HAL_E_OK',0,0,3
+	.byte	'HAL_E_NOT_OK',0,1,0,4,1,5
+	.word	353
+	.byte	6
+	.byte	'__codeptr',0,2,1,1
+	.word	355
+	.byte	7
+	.byte	'unsigned char',0,1,8,6
+	.byte	'Ifx_UReg_8Bit',0,3,96,24
+	.word	378
+	.byte	7
+	.byte	'unsigned int',0,4,7,6
+	.byte	'Ifx_UReg_32Bit',0,3,98,24
+	.word	417
+	.byte	7
+	.byte	'int',0,4,5,6
+	.byte	'Ifx_SReg_32Bit',0,3,101,24
+	.word	456
+	.byte	8
+	.byte	'_Ifx_SRC_SRCR_Bits',0,4,68,16,4,9
+	.byte	'SRPN',0,1
+	.word	378
+	.byte	8,0,2,35,0,9
+	.byte	'reserved_8',0,1
+	.word	378
+	.byte	2,6,2,35,1,9
+	.byte	'SRE',0,1
+	.word	378
+	.byte	1,5,2,35,1,9
+	.byte	'TOS',0,1
+	.word	378
+	.byte	3,2,2,35,1,9
+	.byte	'reserved_14',0,1
+	.word	378
+	.byte	2,0,2,35,1,9
+	.byte	'ECC',0,1
+	.word	378
+	.byte	5,3,2,35,2,9
+	.byte	'reserved_21',0,1
+	.word	378
+	.byte	3,0,2,35,2,9
+	.byte	'SRR',0,1
+	.word	378
+	.byte	1,7,2,35,3,9
+	.byte	'CLRR',0,1
+	.word	378
+	.byte	1,6,2,35,3,9
+	.byte	'SETR',0,1
+	.word	378
+	.byte	1,5,2,35,3,9
+	.byte	'IOV',0,1
+	.word	378
+	.byte	1,4,2,35,3,9
+	.byte	'IOVCLR',0,1
+	.word	378
+	.byte	1,3,2,35,3,9
+	.byte	'SWS',0,1
+	.word	378
+	.byte	1,2,2,35,3,9
+	.byte	'SWSCLR',0,1
+	.word	378
+	.byte	1,1,2,35,3,9
+	.byte	'reserved_31',0,1
+	.word	378
+	.byte	1,0,2,35,3,0,6
+	.byte	'Ifx_SRC_SRCR_Bits',0,4,85,3
+	.word	486
+	.byte	10,4,93,9,4,11
+	.byte	'U',0
+	.word	417
+	.byte	4,2,35,0,11
+	.byte	'I',0
+	.word	456
+	.byte	4,2,35,0,11
+	.byte	'B',0
+	.word	486
+	.byte	4,2,35,0,0,6
+	.byte	'Ifx_SRC_SRCR',0,4,98,3
+	.word	802
+	.byte	8
+	.byte	'_Ifx_SRC_CPU_CPU',0,4,110,25,4,11
+	.byte	'SB',0
+	.word	802
+	.byte	4,2,35,0,0,12
+	.word	862
+	.byte	6
+	.byte	'Ifx_SRC_CPU_CPU',0,4,113,3
+	.word	897
+	.byte	13,12
+	.word	862
+	.byte	14,2,0,12
+	.word	926
+	.byte	8
+	.byte	'_Ifx_SRC_CPU',0,4,128,1,25,12,11
+	.byte	'CPU',0
+	.word	935
+	.byte	12,2,35,0,0,12
+	.word	940
+	.byte	6
+	.byte	'Ifx_SRC_CPU',0,4,131,1,3
+	.word	973
+	.byte	13,8
+	.word	802
+	.byte	14,1,0,8
+	.byte	'_Ifx_SRC_CERBERUS_CERBERUS',0,4,146,1,25,8,11
+	.byte	'SR',0
+	.word	999
+	.byte	8,2,35,0,0,12
+	.word	1008
+	.byte	6
+	.byte	'Ifx_SRC_CERBERUS_CERBERUS',0,4,149,1,3
+	.word	1054
+	.byte	12
+	.word	1008
+	.byte	8
+	.byte	'_Ifx_SRC_CERBERUS',0,4,164,1,25,8,11
+	.byte	'CERBERUS',0
+	.word	1094
+	.byte	8,2,35,0,0,12
+	.word	1099
+	.byte	6
+	.byte	'Ifx_SRC_CERBERUS',0,4,167,1,3
+	.word	1142
+	.byte	8
+	.byte	'_Ifx_SRC_ASCLIN_ASCLIN',0,4,182,1,25,12,11
+	.byte	'TX',0
+	.word	802
+	.byte	4,2,35,0,11
+	.byte	'RX',0
+	.word	802
+	.byte	4,2,35,4,11
+	.byte	'ERR',0
+	.word	802
+	.byte	4,2,35,8,0,12
+	.word	1173
+	.byte	6
+	.byte	'Ifx_SRC_ASCLIN_ASCLIN',0,4,187,1,3
+	.word	1240
+	.byte	13,144,1
+	.word	1173
+	.byte	14,11,0,12
+	.word	1276
+	.byte	8
+	.byte	'_Ifx_SRC_ASCLIN',0,4,202,1,25,144,1,11
+	.byte	'ASCLIN',0
+	.word	1286
+	.byte	144,1,2,35,0,0,12
+	.word	1291
+	.byte	6
+	.byte	'Ifx_SRC_ASCLIN',0,4,205,1,3
+	.word	1332
+	.byte	8
+	.byte	'_Ifx_SRC_QSPI_QSPI',0,4,220,1,25,20,11
+	.byte	'TX',0
+	.word	802
+	.byte	4,2,35,0,11
+	.byte	'RX',0
+	.word	802
+	.byte	4,2,35,4,11
+	.byte	'ERR',0
+	.word	802
+	.byte	4,2,35,8,11
+	.byte	'PT',0
+	.word	802
+	.byte	4,2,35,12,11
+	.byte	'U',0
+	.word	802
+	.byte	4,2,35,16,0,12
+	.word	1361
+	.byte	6
+	.byte	'Ifx_SRC_QSPI_QSPI',0,4,227,1,3
+	.word	1447
+	.byte	13,100
+	.word	1361
+	.byte	14,4,0,12
+	.word	1479
+	.byte	8
+	.byte	'_Ifx_SRC_QSPI',0,4,242,1,25,100,11
+	.byte	'QSPI',0
+	.word	1488
+	.byte	100,2,35,0,0,12
+	.word	1493
+	.byte	6
+	.byte	'Ifx_SRC_QSPI',0,4,245,1,3
+	.word	1528
+	.byte	8
+	.byte	'_Ifx_SRC_HSCT_HSCT',0,4,132,2,25,4,11
+	.byte	'SR',0
+	.word	802
+	.byte	4,2,35,0,0,12
+	.word	1555
+	.byte	6
+	.byte	'Ifx_SRC_HSCT_HSCT',0,4,135,2,3
+	.word	1593
+	.byte	13,4
+	.word	1555
+	.byte	14,0,0,12
+	.word	1625
+	.byte	8
+	.byte	'_Ifx_SRC_HSCT',0,4,150,2,25,4,11
+	.byte	'HSCT',0
+	.word	1634
+	.byte	4,2,35,0,0,12
+	.word	1639
+	.byte	6
+	.byte	'Ifx_SRC_HSCT',0,4,153,2,3
+	.word	1674
+	.byte	8
+	.byte	'_Ifx_SRC_HSSL_HSSL_CH',0,4,168,2,25,16,11
+	.byte	'COK',0
+	.word	802
+	.byte	4,2,35,0,11
+	.byte	'RDI',0
+	.word	802
+	.byte	4,2,35,4,11
+	.byte	'ERR',0
+	.word	802
+	.byte	4,2,35,8,11
+	.byte	'TRG',0
+	.word	802
+	.byte	4,2,35,12,0,12
+	.word	1701
+	.byte	6
+	.byte	'Ifx_SRC_HSSL_HSSL_CH',0,4,174,2,3
+	.word	1782
+	.byte	13,64
+	.word	1701
+	.byte	14,3,0,12
+	.word	1817
+	.byte	8
+	.byte	'_Ifx_SRC_HSSL_HSSL',0,4,189,2,25,68,11
+	.byte	'CH',0
+	.word	1826
+	.byte	64,2,35,0,11
+	.byte	'EXI',0
+	.word	802
+	.byte	4,2,35,64,0,12
+	.word	1831
+	.byte	6
+	.byte	'Ifx_SRC_HSSL_HSSL',0,4,193,2,3
+	.word	1882
+	.byte	13,68
+	.word	1831
+	.byte	14,0,0,12
+	.word	1914
+	.byte	8
+	.byte	'_Ifx_SRC_HSSL',0,4,208,2,25,68,11
+	.byte	'HSSL',0
+	.word	1923
+	.byte	68,2,35,0,0,12
+	.word	1928
+	.byte	6
+	.byte	'Ifx_SRC_HSSL',0,4,211,2,3
+	.word	1963
+	.byte	13,4
+	.word	378
+	.byte	14,3,0,8
+	.byte	'_Ifx_SRC_I2C_I2C',0,4,226,2,25,16,11
+	.byte	'DTR',0
+	.word	802
+	.byte	4,2,35,0,11
+	.byte	'ERR',0
+	.word	802
+	.byte	4,2,35,4,11
+	.byte	'P',0
+	.word	802
+	.byte	4,2,35,8,11
+	.byte	'reserved_C',0
+	.word	1990
+	.byte	4,2,35,12,0,12
+	.word	1999
+	.byte	6
+	.byte	'Ifx_SRC_I2C_I2C',0,4,232,2,3
+	.word	2080
+	.byte	13,16
+	.word	1999
+	.byte	14,0,0,12
+	.word	2110
+	.byte	8
+	.byte	'_Ifx_SRC_I2C',0,4,247,2,25,16,11
+	.byte	'I2C',0
+	.word	2119
+	.byte	16,2,35,0,0,12
+	.word	2124
+	.byte	6
+	.byte	'Ifx_SRC_I2C',0,4,250,2,3
+	.word	2157
+	.byte	8
+	.byte	'_Ifx_SRC_SENT_SENT',0,4,137,3,25,4,11
+	.byte	'SR',0
+	.word	802
+	.byte	4,2,35,0,0,12
+	.word	2183
+	.byte	6
+	.byte	'Ifx_SRC_SENT_SENT',0,4,140,3,3
+	.word	2221
+	.byte	13,40
+	.word	2183
+	.byte	14,9,0,12
+	.word	2253
+	.byte	8
+	.byte	'_Ifx_SRC_SENT',0,4,155,3,25,40,11
+	.byte	'SENT',0
+	.word	2262
+	.byte	40,2,35,0,0,12
+	.word	2267
+	.byte	6
+	.byte	'Ifx_SRC_SENT',0,4,158,3,3
+	.word	2302
+	.byte	13,20
+	.word	802
+	.byte	14,4,0,8
+	.byte	'_Ifx_SRC_MSC_MSC',0,4,173,3,25,20,11
+	.byte	'SR',0
+	.word	2329
+	.byte	20,2,35,0,0,12
+	.word	2338
+	.byte	6
+	.byte	'Ifx_SRC_MSC_MSC',0,4,176,3,3
+	.word	2374
+	.byte	13,40
+	.word	2338
+	.byte	14,1,0,12
+	.word	2404
+	.byte	8
+	.byte	'_Ifx_SRC_MSC',0,4,191,3,25,40,11
+	.byte	'MSC',0
+	.word	2413
+	.byte	40,2,35,0,0,12
+	.word	2418
+	.byte	6
+	.byte	'Ifx_SRC_MSC',0,4,194,3,3
+	.word	2451
+	.byte	13,16
+	.word	802
+	.byte	14,3,0,8
+	.byte	'_Ifx_SRC_CCU6_CCU',0,4,209,3,25,16,11
+	.byte	'SR',0
+	.word	2477
+	.byte	16,2,35,0,0,12
+	.word	2486
+	.byte	6
+	.byte	'Ifx_SRC_CCU6_CCU',0,4,212,3,3
+	.word	2523
+	.byte	13,32
+	.word	2486
+	.byte	14,1,0,12
+	.word	2554
+	.byte	8
+	.byte	'_Ifx_SRC_CCU6',0,4,227,3,25,32,11
+	.byte	'CCU',0
+	.word	2563
+	.byte	32,2,35,0,0,12
+	.word	2568
+	.byte	6
+	.byte	'Ifx_SRC_CCU6',0,4,230,3,3
+	.word	2602
+	.byte	8
+	.byte	'_Ifx_SRC_GPT12_GPT12',0,4,245,3,25,24,11
+	.byte	'CIRQ',0
+	.word	802
+	.byte	4,2,35,0,11
+	.byte	'T2',0
+	.word	802
+	.byte	4,2,35,4,11
+	.byte	'T3',0
+	.word	802
+	.byte	4,2,35,8,11
+	.byte	'T4',0
+	.word	802
+	.byte	4,2,35,12,11
+	.byte	'T5',0
+	.word	802
+	.byte	4,2,35,16,11
+	.byte	'T6',0
+	.word	802
+	.byte	4,2,35,20,0,12
+	.word	2629
+	.byte	6
+	.byte	'Ifx_SRC_GPT12_GPT12',0,4,253,3,3
+	.word	2731
+	.byte	13,24
+	.word	2629
+	.byte	14,0,0,12
+	.word	2765
+	.byte	8
+	.byte	'_Ifx_SRC_GPT12',0,4,140,4,25,24,11
+	.byte	'GPT12',0
+	.word	2774
+	.byte	24,2,35,0,0,12
+	.word	2779
+	.byte	6
+	.byte	'Ifx_SRC_GPT12',0,4,143,4,3
+	.word	2816
+	.byte	8
+	.byte	'_Ifx_SRC_STM_STM',0,4,158,4,25,8,11
+	.byte	'SR',0
+	.word	999
+	.byte	8,2,35,0,0,12
+	.word	2844
+	.byte	6
+	.byte	'Ifx_SRC_STM_STM',0,4,161,4,3
+	.word	2880
+	.byte	13,24
+	.word	2844
+	.byte	14,2,0,12
+	.word	2910
+	.byte	8
+	.byte	'_Ifx_SRC_STM',0,4,176,4,25,24,11
+	.byte	'STM',0
+	.word	2919
+	.byte	24,2,35,0,0,12
+	.word	2924
+	.byte	6
+	.byte	'Ifx_SRC_STM',0,4,179,4,3
+	.word	2957
+	.byte	8
+	.byte	'_Ifx_SRC_FCE_FCE0',0,4,194,4,25,4,11
+	.byte	'SR',0
+	.word	802
+	.byte	4,2,35,0,0,12
+	.word	2983
+	.byte	6
+	.byte	'Ifx_SRC_FCE_FCE0',0,4,197,4,3
+	.word	3020
+	.byte	12
+	.word	2983
+	.byte	8
+	.byte	'_Ifx_SRC_FCE',0,4,212,4,25,4,11
+	.byte	'FCE0',0
+	.word	3051
+	.byte	4,2,35,0,0,12
+	.word	3056
+	.byte	6
+	.byte	'Ifx_SRC_FCE',0,4,215,4,3
+	.word	3090
+	.byte	13,32
+	.word	378
+	.byte	14,31,0,13,128,4
+	.word	802
+	.byte	14,127,0,8
+	.byte	'_Ifx_SRC_DMA_DMA',0,4,230,4,25,176,4,11
+	.byte	'ERR',0
+	.word	2477
+	.byte	16,2,35,0,11
+	.byte	'reserved_10',0
+	.word	3116
+	.byte	32,2,35,16,11
+	.byte	'CH',0
+	.word	3125
+	.byte	128,4,2,35,48,0,12
+	.word	3135
+	.byte	6
+	.byte	'Ifx_SRC_DMA_DMA',0,4,235,4,3
+	.word	3207
+	.byte	13,176,4
+	.word	3135
+	.byte	14,0,0,12
+	.word	3237
+	.byte	8
+	.byte	'_Ifx_SRC_DMA',0,4,250,4,25,176,4,11
+	.byte	'DMA',0
+	.word	3247
+	.byte	176,4,2,35,0,0,12
+	.word	3252
+	.byte	6
+	.byte	'Ifx_SRC_DMA',0,4,253,4,3
+	.word	3287
+	.byte	13,40
+	.word	802
+	.byte	14,9,0,8
+	.byte	'_Ifx_SRC_GETH_GETH',0,4,140,5,25,40,11
+	.byte	'SR',0
+	.word	3313
+	.byte	40,2,35,0,0,12
+	.word	3322
+	.byte	6
+	.byte	'Ifx_SRC_GETH_GETH',0,4,143,5,3
+	.word	3360
+	.byte	13,40
+	.word	3322
+	.byte	14,0,0,12
+	.word	3392
+	.byte	8
+	.byte	'_Ifx_SRC_GETH',0,4,158,5,25,40,11
+	.byte	'GETH',0
+	.word	3401
+	.byte	40,2,35,0,0,12
+	.word	3406
+	.byte	6
+	.byte	'Ifx_SRC_GETH',0,4,161,5,3
+	.word	3441
+	.byte	13,64
+	.word	802
+	.byte	14,15,0,8
+	.byte	'_Ifx_SRC_CAN_CAN',0,4,176,5,25,64,11
+	.byte	'INT',0
+	.word	3468
+	.byte	64,2,35,0,0,12
+	.word	3477
+	.byte	6
+	.byte	'Ifx_SRC_CAN_CAN',0,4,179,5,3
+	.word	3514
+	.byte	13,128,1
+	.word	3477
+	.byte	14,1,0,12
+	.word	3544
+	.byte	8
+	.byte	'_Ifx_SRC_CAN',0,4,194,5,25,128,1,11
+	.byte	'CAN',0
+	.word	3554
+	.byte	128,1,2,35,0,0,12
+	.word	3559
+	.byte	6
+	.byte	'Ifx_SRC_CAN',0,4,197,5,3
+	.word	3594
+	.byte	8
+	.byte	'_Ifx_SRC_VADC_G',0,4,212,5,25,16,11
+	.byte	'SR0',0
+	.word	802
+	.byte	4,2,35,0,11
+	.byte	'SR1',0
+	.word	802
+	.byte	4,2,35,4,11
+	.byte	'SR2',0
+	.word	802
+	.byte	4,2,35,8,11
+	.byte	'SR3',0
+	.word	802
+	.byte	4,2,35,12,0,12
+	.word	3620
+	.byte	6
+	.byte	'Ifx_SRC_VADC_G',0,4,218,5,3
+	.word	3695
+	.byte	8
+	.byte	'_Ifx_SRC_VADC_FC',0,4,237,5,25,4,11
+	.byte	'SR0',0
+	.word	802
+	.byte	4,2,35,0,0,12
+	.word	3724
+	.byte	6
+	.byte	'Ifx_SRC_VADC_FC',0,4,240,5,3
+	.word	3761
+	.byte	13,64
+	.word	3620
+	.byte	14,3,0,12
+	.word	3791
+	.byte	13,64
+	.word	378
+	.byte	14,63,0,12
+	.word	3620
+	.byte	12
+	.word	3620
+	.byte	12
+	.word	3620
+	.byte	12
+	.word	3620
+	.byte	13,16
+	.word	3724
+	.byte	14,3,0,12
+	.word	3834
+	.byte	13,16
+	.word	378
+	.byte	14,15,0,13,32
+	.word	3620
+	.byte	14,1,0,12
+	.word	3857
+	.byte	8
+	.byte	'_Ifx_SRC_VADC',0,4,128,6,25,128,2,11
+	.byte	'G',0
+	.word	3800
+	.byte	64,2,35,0,11
+	.byte	'reserved_40',0
+	.word	3805
+	.byte	64,2,35,64,11
+	.byte	'G8',0
+	.word	3814
+	.byte	16,3,35,128,1,11
+	.byte	'G9',0
+	.word	3819
+	.byte	16,3,35,144,1,11
+	.byte	'G10',0
+	.word	3824
+	.byte	16,3,35,160,1,11
+	.byte	'G11',0
+	.word	3829
+	.byte	16,3,35,176,1,11
+	.byte	'FC',0
+	.word	3843
+	.byte	16,3,35,192,1,11
+	.byte	'reserved_D0',0
+	.word	3848
+	.byte	16,3,35,208,1,11
+	.byte	'CG',0
+	.word	3866
+	.byte	32,3,35,224,1,0,12
+	.word	3871
+	.byte	6
+	.byte	'Ifx_SRC_VADC',0,4,139,6,3
+	.word	4027
+	.byte	8
+	.byte	'_Ifx_SRC_DSADC_DSADC',0,4,154,6,25,8,11
+	.byte	'SRM',0
+	.word	802
+	.byte	4,2,35,0,11
+	.byte	'SRA',0
+	.word	802
+	.byte	4,2,35,4,0,12
+	.word	4054
+	.byte	6
+	.byte	'Ifx_SRC_DSADC_DSADC',0,4,158,6,3
+	.word	4108
+	.byte	13,48
+	.word	4054
+	.byte	14,5,0,12
+	.word	4142
+	.byte	8
+	.byte	'_Ifx_SRC_DSADC',0,4,173,6,25,48,11
+	.byte	'DSADC',0
+	.word	4151
+	.byte	48,2,35,0,0,12
+	.word	4156
+	.byte	6
+	.byte	'Ifx_SRC_DSADC',0,4,176,6,3
+	.word	4193
+	.byte	13,8
+	.word	378
+	.byte	14,7,0,8
+	.byte	'_Ifx_SRC_ERAY_ERAY',0,4,191,6,25,48,11
+	.byte	'INT0',0
+	.word	802
+	.byte	4,2,35,0,11
+	.byte	'INT1',0
+	.word	802
+	.byte	4,2,35,4,11
+	.byte	'TINT0',0
+	.word	802
+	.byte	4,2,35,8,11
+	.byte	'TINT1',0
+	.word	802
+	.byte	4,2,35,12,11
+	.byte	'NDAT0',0
+	.word	802
+	.byte	4,2,35,16,11
+	.byte	'NDAT1',0
+	.word	802
+	.byte	4,2,35,20,11
+	.byte	'MBSC0',0
+	.word	802
+	.byte	4,2,35,24,11
+	.byte	'MBSC1',0
+	.word	802
+	.byte	4,2,35,28,11
+	.byte	'OBUSY',0
+	.word	802
+	.byte	4,2,35,32,11
+	.byte	'IBUSY',0
+	.word	802
+	.byte	4,2,35,36,11
+	.byte	'reserved_28',0
+	.word	4221
+	.byte	8,2,35,40,0,12
+	.word	4230
+	.byte	6
+	.byte	'Ifx_SRC_ERAY_ERAY',0,4,204,6,3
+	.word	4425
+	.byte	13,48
+	.word	4230
+	.byte	14,0,0,12
+	.word	4457
+	.byte	8
+	.byte	'_Ifx_SRC_ERAY',0,4,219,6,25,48,11
+	.byte	'ERAY',0
+	.word	4466
+	.byte	48,2,35,0,0,12
+	.word	4471
+	.byte	6
+	.byte	'Ifx_SRC_ERAY',0,4,222,6,3
+	.word	4506
+	.byte	8
+	.byte	'_Ifx_SRC_HSM_HSM',0,4,237,6,25,8,11
+	.byte	'HSM',0
+	.word	999
+	.byte	8,2,35,0,0,12
+	.word	4533
+	.byte	6
+	.byte	'Ifx_SRC_HSM_HSM',0,4,240,6,3
+	.word	4570
+	.byte	13,8
+	.word	4533
+	.byte	14,0,0,12
+	.word	4600
+	.byte	8
+	.byte	'_Ifx_SRC_HSM',0,4,255,6,25,8,11
+	.byte	'HSM',0
+	.word	4609
+	.byte	8,2,35,0,0,12
+	.word	4614
+	.byte	6
+	.byte	'Ifx_SRC_HSM',0,4,130,7,3
+	.word	4647
+	.byte	8
+	.byte	'_Ifx_SRC_SCU',0,4,145,7,25,16,11
+	.byte	'SCUERU',0
+	.word	2477
+	.byte	16,2,35,0,0,12
+	.word	4673
+	.byte	6
+	.byte	'Ifx_SRC_SCU',0,4,148,7,3
+	.word	4709
+	.byte	8
+	.byte	'_Ifx_SRC_PMS_PMS',0,4,163,7,25,4,11
+	.byte	'SR',0
+	.word	802
+	.byte	4,2,35,0,0,12
+	.word	4735
+	.byte	6
+	.byte	'Ifx_SRC_PMS_PMS',0,4,166,7,3
+	.word	4771
+	.byte	13,16
+	.word	4735
+	.byte	14,3,0,12
+	.word	4801
+	.byte	8
+	.byte	'_Ifx_SRC_PMS',0,4,181,7,25,16,11
+	.byte	'PMS',0
+	.word	4810
+	.byte	16,2,35,0,0,12
+	.word	4815
+	.byte	6
+	.byte	'Ifx_SRC_PMS',0,4,184,7,3
+	.word	4848
+	.byte	13,12
+	.word	802
+	.byte	14,2,0,8
+	.byte	'_Ifx_SRC_SMU_SMU',0,4,199,7,25,12,11
+	.byte	'SR',0
+	.word	4874
+	.byte	12,2,35,0,0,12
+	.word	4883
+	.byte	6
+	.byte	'Ifx_SRC_SMU_SMU',0,4,202,7,3
+	.word	4919
+	.byte	13,12
+	.word	4883
+	.byte	14,0,0,12
+	.word	4949
+	.byte	8
+	.byte	'_Ifx_SRC_SMU',0,4,217,7,25,12,11
+	.byte	'SMU',0
+	.word	4958
+	.byte	12,2,35,0,0,12
+	.word	4963
+	.byte	6
+	.byte	'Ifx_SRC_SMU',0,4,220,7,3
+	.word	4996
+	.byte	13,32
+	.word	802
+	.byte	14,7,0,8
+	.byte	'_Ifx_SRC_PSI5_PSI5',0,4,235,7,25,32,11
+	.byte	'SR',0
+	.word	5022
+	.byte	32,2,35,0,0,12
+	.word	5031
+	.byte	6
+	.byte	'Ifx_SRC_PSI5_PSI5',0,4,238,7,3
+	.word	5069
+	.byte	13,32
+	.word	5031
+	.byte	14,0,0,12
+	.word	5101
+	.byte	8
+	.byte	'_Ifx_SRC_PSI5',0,4,253,7,25,32,11
+	.byte	'PSI5',0
+	.word	5110
+	.byte	32,2,35,0,0,12
+	.word	5115
+	.byte	6
+	.byte	'Ifx_SRC_PSI5',0,4,128,8,3
+	.word	5150
+	.byte	8
+	.byte	'_Ifx_SRC_DAM_DAM',0,4,143,8,25,24,11
+	.byte	'LI0',0
+	.word	802
+	.byte	4,2,35,0,11
+	.byte	'RI0',0
+	.word	802
+	.byte	4,2,35,4,11
+	.byte	'LI1',0
+	.word	802
+	.byte	4,2,35,8,11
+	.byte	'RI1',0
+	.word	802
+	.byte	4,2,35,12,11
+	.byte	'DR',0
+	.word	802
+	.byte	4,2,35,16,11
+	.byte	'ERR',0
+	.word	802
+	.byte	4,2,35,20,0,12
+	.word	5177
+	.byte	6
+	.byte	'Ifx_SRC_DAM_DAM',0,4,151,8,3
+	.word	5278
+	.byte	13,24
+	.word	5177
+	.byte	14,0,0,12
+	.word	5308
+	.byte	8
+	.byte	'_Ifx_SRC_DAM',0,4,166,8,25,24,11
+	.byte	'DAM',0
+	.word	5317
+	.byte	24,2,35,0,0,12
+	.word	5322
+	.byte	6
+	.byte	'Ifx_SRC_DAM',0,4,169,8,3
+	.word	5355
+	.byte	8
+	.byte	'_Ifx_SRC_PSI5S_PSI5S',0,4,184,8,25,32,11
+	.byte	'SR',0
+	.word	5022
+	.byte	32,2,35,0,0,12
+	.word	5381
+	.byte	6
+	.byte	'Ifx_SRC_PSI5S_PSI5S',0,4,187,8,3
+	.word	5421
+	.byte	13,32
+	.word	5381
+	.byte	14,0,0,12
+	.word	5455
+	.byte	8
+	.byte	'_Ifx_SRC_PSI5S',0,4,202,8,25,32,11
+	.byte	'PSI5S',0
+	.word	5464
+	.byte	32,2,35,0,0,12
+	.word	5469
+	.byte	6
+	.byte	'Ifx_SRC_PSI5S',0,4,205,8,3
+	.word	5506
+	.byte	8
+	.byte	'_Ifx_SRC_GPSR_GPSR',0,4,220,8,25,32,11
+	.byte	'SR',0
+	.word	5022
+	.byte	32,2,35,0,0,12
+	.word	5534
+	.byte	6
+	.byte	'Ifx_SRC_GPSR_GPSR',0,4,223,8,3
+	.word	5572
+	.byte	13,96
+	.word	5534
+	.byte	14,2,0,12
+	.word	5604
+	.byte	8
+	.byte	'_Ifx_SRC_GPSR',0,4,238,8,25,96,11
+	.byte	'GPSR',0
+	.word	5613
+	.byte	96,2,35,0,0,12
+	.word	5618
+	.byte	6
+	.byte	'Ifx_SRC_GPSR',0,4,241,8,3
+	.word	5653
+	.byte	6
+	.byte	'HAL_Return_Type',0,1,71,3
+	.word	304
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L30:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,4,1,3,8,58,15,59,15,57,15,11,15,0,0,3,40,0,3,8,28,13,0
+	.byte	0,4,21,0,54,15,0,0,5,15,0,73,19,0,0,6,22,0,3,8,58,15,59,15,57,15,73,19,0,0,7,36,0,3,8,11,15,62,15,0,0
+	.byte	8,19,1,3,8,58,15,59,15,57,15,11,15,0,0,9,13,0,3,8,11,15,73,19,13,15,12,15,56,9,0,0,10,23,1,58,15,59,15
+	.byte	57,15,11,15,0,0,11,13,0,3,8,73,19,11,15,56,9,0,0,12,53,0,73,19,0,0,13,1,1,11,15,73,19,0,0,14,33,0,47,15
+	.byte	0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L31:
+	.word	.L82-.L81
+.L81:
+	.half	3
+	.word	.L84-.L83
+.L83:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'C:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\Level_04_HAL\\HAL_Libraries\\HAL_Return_Types.h',0
+	.byte	0,0,0
+	.byte	'../Level_04_HAL/TC375_IR/TC375_SRN_GPT12_T6_functions.c',0,0,0,0
+	.byte	'C:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\Level_Libraries\\Infra\\Sfr\\TC37A\\_Reg\\Ifx_TypesReg.h',0
+	.byte	0,0,0
+	.byte	'C:\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\\\AURIX_Practice_07_Display-by-DMA\\Level_Libraries\\Infra\\Sfr\\TC37A\\_Reg\\IfxSrc_regdef.h',0
+	.byte	0,0,0,0
+.L84:
+.L82:
+	.sdecl	'.debug_info',debug,cluster('Func_TC375_SRN_GPT12_T6_init')
+	.sect	'.debug_info'
+.L32:
+	.word	389
+	.half	3
+	.word	.L33
+	.byte	4,1
+	.byte	'../Level_04_HAL/TC375_IR/TC375_SRN_GPT12_T6_functions.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\AURIX_Practice_07_Display-by-DMA\\TriCore Debug (TASKING)\\',0
+	.byte	12,1
+	.word	.L35,.L34
+	.byte	2
+	.word	.L28
+	.byte	3
+	.byte	'Func_TC375_SRN_GPT12_T6_init',0,1,86,17
+	.word	.L62
+	.byte	1,1,1
+	.word	.L17,.L63,.L16
+	.byte	4
+	.word	.L17,.L63
+	.byte	5
+	.byte	'tmp',0,1,87,19
+	.word	.L62,.L64
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Func_TC375_SRN_GPT12_T6_init')
+	.sect	'.debug_abbrev'
+.L33:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Func_TC375_SRN_GPT12_T6_init')
+	.sect	'.debug_line'
+.L34:
+	.word	.L86-.L85
+.L85:
+	.half	3
+	.word	.L88-.L87
+.L87:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../Level_04_HAL/TC375_IR/TC375_SRN_GPT12_T6_functions.c',0,0,0,0,0
+.L88:
+	.byte	5,17,7,0,5,2
+	.word	.L17
+	.byte	3,228,0,1,5,23,9
+	.half	.L89-.L17
+	.byte	1,5,17,9
+	.half	.L90-.L89
+	.byte	3,1,1,5,22,9
+	.half	.L91-.L90
+	.byte	1,5,17,9
+	.half	.L92-.L91
+	.byte	3,1,1,5,22,9
+	.half	.L93-.L92
+	.byte	1,5,17,9
+	.half	.L94-.L93
+	.byte	3,1,1,5,23,9
+	.half	.L95-.L94
+	.byte	1,5,17,9
+	.half	.L96-.L95
+	.byte	3,1,1,5,23,9
+	.half	.L97-.L96
+	.byte	1,5,17,9
+	.half	.L98-.L97
+	.byte	3,1,1,5,25,9
+	.half	.L99-.L98
+	.byte	1,5,17,9
+	.half	.L100-.L99
+	.byte	3,1,1,5,25,9
+	.half	.L101-.L100
+	.byte	1,5,7,9
+	.half	.L102-.L101
+	.byte	3,6,1,5,3,9
+	.half	.L75-.L102
+	.byte	3,2,1,5,1,9
+	.half	.L2-.L75
+	.byte	3,1,1,7,9
+	.half	.L36-.L2
+	.byte	0,1,1
+.L86:
+	.sdecl	'.debug_ranges',debug,cluster('Func_TC375_SRN_GPT12_T6_init')
+	.sect	'.debug_ranges'
+.L35:
+	.word	-1,.L17,0,.L36-.L17,0,0
+	.sdecl	'.debug_pubnames',debug
+	.sect	'.debug_pubnames'
+	.word	47
+	.half	2
+	.word	.L32,393,313
+	.byte	'Func_TC375_SRN_GPT12_T6_init',0
+	.word	0
+	.sdecl	'.debug_info',debug,cluster('Func_TC375_SRN_GPT12_T2_init')
+	.sect	'.debug_info'
+.L37:
+	.word	389
+	.half	3
+	.word	.L38
+	.byte	4,1
+	.byte	'../Level_04_HAL/TC375_IR/TC375_SRN_GPT12_T6_functions.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\AURIX_Practice_07_Display-by-DMA\\TriCore Debug (TASKING)\\',0
+	.byte	12,1
+	.word	.L40,.L39
+	.byte	2
+	.word	.L28
+	.byte	3
+	.byte	'Func_TC375_SRN_GPT12_T2_init',0,1,118,17
+	.word	.L62
+	.byte	1,1,1
+	.word	.L19,.L65,.L18
+	.byte	4
+	.word	.L19,.L65
+	.byte	5
+	.byte	'tmp',0,1,119,19
+	.word	.L62,.L66
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Func_TC375_SRN_GPT12_T2_init')
+	.sect	'.debug_abbrev'
+.L38:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Func_TC375_SRN_GPT12_T2_init')
+	.sect	'.debug_line'
+.L39:
+	.word	.L104-.L103
+.L103:
+	.half	3
+	.word	.L106-.L105
+.L105:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../Level_04_HAL/TC375_IR/TC375_SRN_GPT12_T6_functions.c',0,0,0,0,0
+.L106:
+	.byte	5,17,7,0,5,2
+	.word	.L19
+	.byte	3,248,0,1,5,23,9
+	.half	.L107-.L19
+	.byte	1,5,17,9
+	.half	.L108-.L107
+	.byte	3,1,1,5,22,9
+	.half	.L109-.L108
+	.byte	1,5,17,9
+	.half	.L110-.L109
+	.byte	3,1,1,5,22,9
+	.half	.L111-.L110
+	.byte	1,5,17,9
+	.half	.L112-.L111
+	.byte	3,1,1,5,23,9
+	.half	.L113-.L112
+	.byte	1,5,17,9
+	.half	.L114-.L113
+	.byte	3,1,1,5,23,9
+	.half	.L115-.L114
+	.byte	1,5,17,9
+	.half	.L116-.L115
+	.byte	3,1,1,5,25,9
+	.half	.L117-.L116
+	.byte	1,5,17,9
+	.half	.L118-.L117
+	.byte	3,1,1,5,25,9
+	.half	.L119-.L118
+	.byte	1,5,7,9
+	.half	.L120-.L119
+	.byte	3,2,1,5,3,9
+	.half	.L76-.L120
+	.byte	3,2,1,5,1,9
+	.half	.L3-.L76
+	.byte	3,1,1,7,9
+	.half	.L41-.L3
+	.byte	0,1,1
+.L104:
+	.sdecl	'.debug_ranges',debug,cluster('Func_TC375_SRN_GPT12_T2_init')
+	.sect	'.debug_ranges'
+.L40:
+	.word	-1,.L19,0,.L41-.L19,0,0
+	.sdecl	'.debug_pubnames',debug
+	.sect	'.debug_pubnames'
+	.word	47
+	.half	2
+	.word	.L37,393,313
+	.byte	'Func_TC375_SRN_GPT12_T2_init',0
+	.word	0
+	.sdecl	'.debug_info',debug,cluster('Func_TC375_SRN_GPT12_T2_enable')
+	.sect	'.debug_info'
+.L42:
+	.word	393
+	.half	3
+	.word	.L43
+	.byte	4,1
+	.byte	'../Level_04_HAL/TC375_IR/TC375_SRN_GPT12_T6_functions.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\AURIX_Practice_07_Display-by-DMA\\TriCore Debug (TASKING)\\',0
+	.byte	12,1
+	.word	.L45,.L44
+	.byte	2
+	.word	.L28
+	.byte	3
+	.byte	'Func_TC375_SRN_GPT12_T2_enable',0,1,134,1,17
+	.word	.L62
+	.byte	1,1,1
+	.word	.L21,.L67,.L20
+	.byte	4
+	.word	.L21,.L67
+	.byte	5
+	.byte	'tmp',0,1,135,1,19
+	.word	.L62,.L68
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Func_TC375_SRN_GPT12_T2_enable')
+	.sect	'.debug_abbrev'
+.L43:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Func_TC375_SRN_GPT12_T2_enable')
+	.sect	'.debug_line'
+.L44:
+	.word	.L122-.L121
+.L121:
+	.half	3
+	.word	.L124-.L123
+.L123:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../Level_04_HAL/TC375_IR/TC375_SRN_GPT12_T6_functions.c',0,0,0,0,0
+.L124:
+	.byte	5,17,7,0,5,2
+	.word	.L21
+	.byte	3,136,1,1,5,22,9
+	.half	.L125-.L21
+	.byte	1,5,21,9
+	.half	.L126-.L125
+	.byte	3,2,1,5,3,9
+	.half	.L127-.L126
+	.byte	1,5,9,7,9
+	.half	.L128-.L127
+	.byte	3,1,1,5,19,9
+	.half	.L77-.L128
+	.byte	1,5,9,9
+	.half	.L4-.L77
+	.byte	3,2,1,5,3,9
+	.half	.L5-.L4
+	.byte	3,3,1,5,1,9
+	.half	.L6-.L5
+	.byte	3,1,1,7,9
+	.half	.L46-.L6
+	.byte	0,1,1
+.L122:
+	.sdecl	'.debug_ranges',debug,cluster('Func_TC375_SRN_GPT12_T2_enable')
+	.sect	'.debug_ranges'
+.L45:
+	.word	-1,.L21,0,.L46-.L21,0,0
+	.sdecl	'.debug_pubnames',debug
+	.sect	'.debug_pubnames'
+	.word	49
+	.half	2
+	.word	.L42,397,313
+	.byte	'Func_TC375_SRN_GPT12_T2_enable',0
+	.word	0
+	.sdecl	'.debug_info',debug,cluster('Func_TC375_SRN_GPT12_T2_clear')
+	.sect	'.debug_info'
+.L47:
+	.word	392
+	.half	3
+	.word	.L48
+	.byte	4,1
+	.byte	'../Level_04_HAL/TC375_IR/TC375_SRN_GPT12_T6_functions.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\AURIX_Practice_07_Display-by-DMA\\TriCore Debug (TASKING)\\',0
+	.byte	12,1
+	.word	.L50,.L49
+	.byte	2
+	.word	.L28
+	.byte	3
+	.byte	'Func_TC375_SRN_GPT12_T2_clear',0,1,148,1,17
+	.word	.L62
+	.byte	1,1,1
+	.word	.L23,.L69,.L22
+	.byte	4
+	.word	.L23,.L69
+	.byte	5
+	.byte	'tmp',0,1,149,1,19
+	.word	.L62,.L70
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Func_TC375_SRN_GPT12_T2_clear')
+	.sect	'.debug_abbrev'
+.L48:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Func_TC375_SRN_GPT12_T2_clear')
+	.sect	'.debug_line'
+.L49:
+	.word	.L130-.L129
+.L129:
+	.half	3
+	.word	.L132-.L131
+.L131:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../Level_04_HAL/TC375_IR/TC375_SRN_GPT12_T6_functions.c',0,0,0,0,0
+.L132:
+	.byte	5,17,7,0,5,2
+	.word	.L23
+	.byte	3,150,1,1,5,23,9
+	.half	.L133-.L23
+	.byte	1,5,21,9
+	.half	.L134-.L133
+	.byte	3,2,1,5,3,9
+	.half	.L135-.L134
+	.byte	1,5,9,7,9
+	.half	.L136-.L135
+	.byte	3,1,1,5,19,9
+	.half	.L78-.L136
+	.byte	1,5,9,9
+	.half	.L7-.L78
+	.byte	3,2,1,5,3,9
+	.half	.L8-.L7
+	.byte	3,3,1,5,1,9
+	.half	.L9-.L8
+	.byte	3,1,1,7,9
+	.half	.L51-.L9
+	.byte	0,1,1
+.L130:
+	.sdecl	'.debug_ranges',debug,cluster('Func_TC375_SRN_GPT12_T2_clear')
+	.sect	'.debug_ranges'
+.L50:
+	.word	-1,.L23,0,.L51-.L23,0,0
+	.sdecl	'.debug_pubnames',debug
+	.sect	'.debug_pubnames'
+	.word	48
+	.half	2
+	.word	.L47,396,313
+	.byte	'Func_TC375_SRN_GPT12_T2_clear',0
+	.word	0
+	.sdecl	'.debug_info',debug,cluster('Func_TC375_SRN_GPT12_T6_enable')
+	.sect	'.debug_info'
+.L52:
+	.word	393
+	.half	3
+	.word	.L53
+	.byte	4,1
+	.byte	'../Level_04_HAL/TC375_IR/TC375_SRN_GPT12_T6_functions.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\AURIX_Practice_07_Display-by-DMA\\TriCore Debug (TASKING)\\',0
+	.byte	12,1
+	.word	.L55,.L54
+	.byte	2
+	.word	.L28
+	.byte	3
+	.byte	'Func_TC375_SRN_GPT12_T6_enable',0,1,170,1,17
+	.word	.L62
+	.byte	1,1,1
+	.word	.L25,.L71,.L24
+	.byte	4
+	.word	.L25,.L71
+	.byte	5
+	.byte	'tmp',0,1,171,1,19
+	.word	.L62,.L72
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Func_TC375_SRN_GPT12_T6_enable')
+	.sect	'.debug_abbrev'
+.L53:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Func_TC375_SRN_GPT12_T6_enable')
+	.sect	'.debug_line'
+.L54:
+	.word	.L138-.L137
+.L137:
+	.half	3
+	.word	.L140-.L139
+.L139:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../Level_04_HAL/TC375_IR/TC375_SRN_GPT12_T6_functions.c',0,0,0,0,0
+.L140:
+	.byte	5,17,7,0,5,2
+	.word	.L25
+	.byte	3,172,1,1,5,22,9
+	.half	.L141-.L25
+	.byte	1,5,21,9
+	.half	.L142-.L141
+	.byte	3,2,1,5,3,9
+	.half	.L143-.L142
+	.byte	1,5,9,7,9
+	.half	.L144-.L143
+	.byte	3,1,1,5,19,9
+	.half	.L79-.L144
+	.byte	1,5,9,9
+	.half	.L10-.L79
+	.byte	3,2,1,5,3,9
+	.half	.L11-.L10
+	.byte	3,3,1,5,1,9
+	.half	.L12-.L11
+	.byte	3,1,1,7,9
+	.half	.L56-.L12
+	.byte	0,1,1
+.L138:
+	.sdecl	'.debug_ranges',debug,cluster('Func_TC375_SRN_GPT12_T6_enable')
+	.sect	'.debug_ranges'
+.L55:
+	.word	-1,.L25,0,.L56-.L25,0,0
+	.sdecl	'.debug_pubnames',debug
+	.sect	'.debug_pubnames'
+	.word	49
+	.half	2
+	.word	.L52,397,313
+	.byte	'Func_TC375_SRN_GPT12_T6_enable',0
+	.word	0
+	.sdecl	'.debug_info',debug,cluster('Func_TC375_IR_SRN_GPT12_T6_clear')
+	.sect	'.debug_info'
+.L57:
+	.word	395
+	.half	3
+	.word	.L58
+	.byte	4,1
+	.byte	'../Level_04_HAL/TC375_IR/TC375_SRN_GPT12_T6_functions.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\WS_AURIX_Practice_07_Display-by-DMA_Solution_1\\WS_AURIX_Practice_07_Display-by-DMA_Solution\\AURIX_Practice_07_Display-by-DMA\\TriCore Debug (TASKING)\\',0
+	.byte	12,1
+	.word	.L60,.L59
+	.byte	2
+	.word	.L28
+	.byte	3
+	.byte	'Func_TC375_IR_SRN_GPT12_T6_clear',0,1,192,1,17
+	.word	.L62
+	.byte	1,1,1
+	.word	.L27,.L73,.L26
+	.byte	4
+	.word	.L27,.L73
+	.byte	5
+	.byte	'tmp',0,1,193,1,19
+	.word	.L62,.L74
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Func_TC375_IR_SRN_GPT12_T6_clear')
+	.sect	'.debug_abbrev'
+.L58:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Func_TC375_IR_SRN_GPT12_T6_clear')
+	.sect	'.debug_line'
+.L59:
+	.word	.L146-.L145
+.L145:
+	.half	3
+	.word	.L148-.L147
+.L147:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../Level_04_HAL/TC375_IR/TC375_SRN_GPT12_T6_functions.c',0,0,0,0,0
+.L148:
+	.byte	5,17,7,0,5,2
+	.word	.L27
+	.byte	3,194,1,1,5,23,9
+	.half	.L149-.L27
+	.byte	1,5,21,9
+	.half	.L150-.L149
+	.byte	3,2,1,5,3,9
+	.half	.L151-.L150
+	.byte	1,5,9,7,9
+	.half	.L152-.L151
+	.byte	3,1,1,5,19,9
+	.half	.L80-.L152
+	.byte	1,5,9,9
+	.half	.L13-.L80
+	.byte	3,2,1,5,3,9
+	.half	.L14-.L13
+	.byte	3,3,1,5,1,9
+	.half	.L15-.L14
+	.byte	3,1,1,7,9
+	.half	.L61-.L15
+	.byte	0,1,1
+.L146:
+	.sdecl	'.debug_ranges',debug,cluster('Func_TC375_IR_SRN_GPT12_T6_clear')
+	.sect	'.debug_ranges'
+.L60:
+	.word	-1,.L27,0,.L61-.L27,0,0
+	.sdecl	'.debug_pubnames',debug
+	.sect	'.debug_pubnames'
+	.word	51
+	.half	2
+	.word	.L57,399,313
+	.byte	'Func_TC375_IR_SRN_GPT12_T6_clear',0
+	.word	0
+	.sdecl	'.debug_loc',debug,cluster('Func_TC375_IR_SRN_GPT12_T6_clear')
+	.sect	'.debug_loc'
+.L26:
+	.word	-1,.L27,0,.L73-.L27
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L74:
+	.word	-1,.L27,.L80-.L27,.L13-.L27
+	.half	1
+	.byte	82
+	.word	.L14-.L27,.L73-.L27
+	.half	1
+	.byte	82
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Func_TC375_SRN_GPT12_T2_clear')
+	.sect	'.debug_loc'
+.L22:
+	.word	-1,.L23,0,.L69-.L23
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L70:
+	.word	-1,.L23,.L78-.L23,.L7-.L23
+	.half	1
+	.byte	82
+	.word	.L8-.L23,.L69-.L23
+	.half	1
+	.byte	82
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Func_TC375_SRN_GPT12_T2_enable')
+	.sect	'.debug_loc'
+.L20:
+	.word	-1,.L21,0,.L67-.L21
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L68:
+	.word	-1,.L21,.L77-.L21,.L4-.L21
+	.half	1
+	.byte	82
+	.word	.L5-.L21,.L67-.L21
+	.half	1
+	.byte	82
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Func_TC375_SRN_GPT12_T2_init')
+	.sect	'.debug_loc'
+.L18:
+	.word	-1,.L19,0,.L65-.L19
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L66:
+	.word	-1,.L19,.L76-.L19,.L65-.L19
+	.half	1
+	.byte	82
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Func_TC375_SRN_GPT12_T6_enable')
+	.sect	'.debug_loc'
+.L24:
+	.word	-1,.L25,0,.L71-.L25
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L72:
+	.word	-1,.L25,.L79-.L25,.L10-.L25
+	.half	1
+	.byte	82
+	.word	.L11-.L25,.L71-.L25
+	.half	1
+	.byte	82
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Func_TC375_SRN_GPT12_T6_init')
+	.sect	'.debug_loc'
+.L16:
+	.word	-1,.L17,0,.L63-.L17
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L64:
+	.word	-1,.L17,.L75-.L17,.L63-.L17
+	.half	1
+	.byte	82
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L153:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,26,8,27,8,30,8,29,8,28,8,16,8,17,8,24,8,25,8,31,8,32,8,33,8,34,8,35,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('Func_TC375_SRN_GPT12_T6_init')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L153,.L17,.L63-.L17
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('Func_TC375_SRN_GPT12_T2_init')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L153,.L19,.L65-.L19
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('Func_TC375_SRN_GPT12_T2_enable')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L153,.L21,.L67-.L21
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('Func_TC375_SRN_GPT12_T2_clear')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L153,.L23,.L69-.L23
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('Func_TC375_SRN_GPT12_T6_enable')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L153,.L25,.L71-.L25
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('Func_TC375_IR_SRN_GPT12_T6_clear')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L153,.L27,.L73-.L27
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	; Module end
