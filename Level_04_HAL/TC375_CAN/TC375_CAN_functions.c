@@ -12,23 +12,6 @@ uint32 txData[2];
 
 volatile uint16 CAN_TxCounterValue = 0;
 
-/* Debug counters for CAN TX/RX diagnostics */
-volatile uint32 dbg_can_tx_req = 0;
-volatile uint32 dbg_can_tx_ok = 0;  /* TX completion counter */
-volatile uint32 dbg_can_rx_ok  = 0;
-volatile uint32 dbg_can_rx_to  = 0;
-
-/* CAN bus status debug */
-volatile uint32 dbg_can0_psr = 0;   /* Node0 Protocol Status Register */
-volatile uint32 dbg_can1_psr = 0;   /* Node1 Protocol Status Register */
-volatile uint32 dbg_can0_ecr = 0;   /* Node0 Error Counter Register */
-volatile uint32 dbg_can1_ecr = 0;   /* Node1 Error Counter Register */
-volatile uint32 dbg_can1_ndat1 = 0; /* Node1 New Data register */
-volatile uint32 dbg_txbuf0_addr = 0; /* TX buffer 0 base address */
-volatile uint32 dbg_txbuf0_db0_addr = 0; /* TX buffer 0 DB0 address */
-volatile uint32 dbg_txbuf0_header0 = 0; /* TX buffer header word 0 */
-volatile uint32 dbg_txbuf0_header1 = 0; /* TX buffer header word 1 */
-
 #define CAN0_MRAM_BASE_ADDR ((uint32) & MODULE_CAN0.RAM[0])
 /* TBSA from iLLD = 0x100 words = 0x400 bytes offset from RAM base */
 /* TX Buffer 0 base = 0xF0200000 + 0x400 = 0xF0200400 */
@@ -128,12 +111,6 @@ HAL_Return_Type Func_CAN_init(void)
     txBuf0[2] = 0u;
     txBuf0[3] = 0u;
 
-    /* Debug: capture addresses for verification */
-    dbg_txbuf0_addr = CAN0_TXBUF0_BASE_ADDR;
-    dbg_txbuf0_db0_addr = CAN0_TXBUF0_DB0_ADDR;
-    dbg_txbuf0_header0 = txBuf0[0];
-    dbg_txbuf0_header1 = txBuf0[1];
-
     return HAL_E_OK;
 }
 
@@ -143,32 +120,14 @@ HAL_Return_Type Func_CAN_send_counter_via_dma(void) {
   /* Trigger transmission request for Buffer 0 of Node 0 */
   MODULE_CAN0.N[0].TX.BAR.U = 0x1;
 
-  /* Debug: increment TX request counter */
-  dbg_can_tx_req++;
-
-  /* Check if TX actually completed (note: spelling is "Occured" in iLLD) */
-  if (IfxCan_Node_isTxBufferTransmissionOccured(IfxCan_getNodePointer(&MODULE_CAN0, IfxCan_NodeId_0), IfxCan_TxBufferId_0))
-  {
-      dbg_can_tx_ok++;
-      /* Note: iLLD may not have clear function - TX completion flag auto-clears */
-  }
-
   return HAL_E_OK;
 }
 
 HAL_Return_Type Func_CAN_receive_counter(uint16 *value)
 {
-    /* Capture CAN bus status for debugging */
-    dbg_can0_psr = CAN0_PSR0.U;   /* Node0 Protocol Status */
-    dbg_can1_psr = CAN0_PSR1.U;   /* Node1 Protocol Status */
-    dbg_can0_ecr = CAN0_ECR0.U;   /* Node0 Error Counters */
-    dbg_can1_ecr = CAN0_ECR1.U;   /* Node1 Error Counters */
-    dbg_can1_ndat1 = CAN0_NDAT11.U;  /* Node1 New Data flags */
-
     /* Check if new message in RX Buffer 0 */
     if (!IfxCan_Can_isNewDataReceived(&canNodeRx, IfxCan_RxBufferId_0))
     {
-        dbg_can_rx_to++;
         return HAL_E_NOT_OK;     /* -> Task_Display will show 9999 */
     }
 
@@ -185,6 +144,5 @@ HAL_Return_Type Func_CAN_receive_counter(uint16 *value)
 
     *value = (uint16)(data[0] & 0xFFFFu);
 
-    dbg_can_rx_ok++;
     return HAL_E_OK;
 }

@@ -88,29 +88,6 @@
 extern uint16 DisplayOutputFIFO[];
 
 extern volatile uint16 CAN_TxCounterValue;
-extern volatile uint32 dbg_calculated_dadr;
-extern volatile uint16 dbg_t3_val;
-extern volatile uint16 dbg_tx_db0_u16;
-extern volatile uint16 dbg_rxCnt;
-
-// Debug variables for DMA diagnostics
-extern volatile uint32 dbg_DMA_CH1_DADR;
-volatile uint32 dbg_dma_ch1_adicr  = 0;
-volatile uint32 dbg_dma_ch1_chcfgr = 0;
-volatile uint32 dbg_dma_build_tag  = 0;
-volatile const char *dbg_dma_src_file = __FILE__;
-
-/* DMA address drift debugging */
-volatile uint32 dbg_addr_before = 0;
-volatile uint32 dbg_addr_after_disable = 0;
-volatile uint32 dbg_addr_after_config = 0;
-volatile uint32 dbg_addr_before_enable = 0;
-volatile uint32 dbg_addr_after_enable = 0;
-volatile uint32 dbg_addr_final = 0;
-
-// Debug variables for CAN RX diagnostics
-volatile uint32 dbg_can1_rx_isr_hits = 0;
-volatile uint32 dbg_rx_db0_word = 0;
 
 /*********************************************************************************************************************/
 /*-------------------------------------------------Global
@@ -402,11 +379,6 @@ HAL_Return_Type Func_DMA_Ch1_is_busy(boolean *busy) {
 /*********************************************************************************************************************/
 HAL_Return_Type Func_DMA_Ch1_start(void)
 {
-    dbg_dma_build_tag = 0x11223344;
-
-    /* CRITICAL: Check address BEFORE any operations */
-    uint32 addr_before = MODULE_DMA.CH[1].DADR.U;
-
     /* Disable ch1 so config writes latch (TRM requirement) */
     DMA_TSR1.B.DCH = 1;
 
@@ -416,9 +388,6 @@ HAL_Return_Type Func_DMA_Ch1_start(void)
 
     /* Clear CH interrupt */
     MODULE_DMA.CH[1].CHCSR.B.CICH = 1;
-
-    /* Check address AFTER disable */
-    uint32 addr_after_disable = MODULE_DMA.CH[1].DADR.U;
 
     /* CRITICAL: Force correct destination EVERY TIME - prevents drift */
     MODULE_DMA.CH[1].DADR.U   = 0xF0200408u;   /* EXACT DB0 word address */
@@ -441,38 +410,11 @@ HAL_Return_Type Func_DMA_Ch1_start(void)
     /* Force TCOUNT reset to prevent multi-transfer drift */
     MODULE_DMA.CH[1].CHCSR.B.TCOUNT = 1u;
 
-    /* Check address AFTER configuration but BEFORE enable */
-    uint32 addr_after_config = MODULE_DMA.CH[1].DADR.U;
-
-    /* Debug snapshot with drift tracking */
-    dbg_DMA_CH1_DADR   = MODULE_DMA.CH[1].DADR.U;
-    dbg_dma_ch1_adicr  = MODULE_DMA.CH[1].ADICR.U;
-    dbg_dma_ch1_chcfgr = MODULE_DMA.CH[1].CHCFGR.U;
-
-    /* Store drift debug info */
-    dbg_addr_before = addr_before;
-    dbg_addr_after_disable = addr_after_disable;
-    dbg_addr_after_config = addr_after_config;
-
-    /* Check address AFTER taking snapshot but BEFORE enable */
-    uint32 addr_before_enable = MODULE_DMA.CH[1].DADR.U;
-
     /* Enable ch1 */
     DMA_TSR1.B.ECH = 1;
 
-    /* Check address AFTER enable but BEFORE software request */
-    uint32 addr_after_enable = MODULE_DMA.CH[1].DADR.U;
-
     /* Software request */
     MODULE_DMA.CH[1].CHCSR.B.SCH = 1;
-
-    /* Check final address AFTER software request */
-    uint32 addr_final = MODULE_DMA.CH[1].DADR.U;
-
-    /* Store detailed drift tracking */
-    dbg_addr_before_enable = addr_before_enable;
-    dbg_addr_after_enable = addr_after_enable;
-    dbg_addr_final = addr_final;
 
     return HAL_E_OK;
 }

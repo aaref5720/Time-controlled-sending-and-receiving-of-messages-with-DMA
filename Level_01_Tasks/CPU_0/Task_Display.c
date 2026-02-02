@@ -66,11 +66,6 @@
 #include <Level_02_Interfaces/Interface_Libraries/L02_Return_Types.h>
 #include <Level_Libraries/iLLD/TC37A/Tricore/Cpu/Std/Platform_Types.h>
 
-#include <Level_Libraries/Infra/Sfr/TC37A/_Reg/IfxCan_reg.h>
-#include <Level_Libraries/Infra/Sfr/TC37A/_Reg/IfxDma_reg.h>
-#include <Level_Libraries/Infra/Sfr/TC37A/_Reg/IfxGpt12_reg.h>
-#include <Level_Libraries/Infra/Sfr/TC37A/_Reg/IfxSrc_reg.h>
-
 #include <Level_02_Interfaces/AdapterLite/IF_Display.h>
 #include <Level_02_Interfaces/AdapterLite/IF_Switch1_Switch2.h>
 
@@ -121,29 +116,6 @@ static void Led1TimerCallback(TimerHandle_t xTimer) {
 /*-------------------------------------------------Global
  * variables--------------------------------------------------*/
 /*********************************************************************************************************************/
-/*********************************************************************************************************************/
-
-volatile uint32 dbg_GPT120_T6CON;
-volatile uint32 dbg_GPT120_CAPREL;
-volatile uint32 dbg_SRC_GPT120T6;
-volatile uint32 dbg_DMA_CH1_CHCFGR;
-volatile uint32 dbg_DMA_CH1_SADR;
-volatile uint32 dbg_DMA_CH1_DADR;
-volatile uint32 dbg_CAN0_N0_NPCR;
-volatile uint32 dbg_CAN0_N1_NPCR;
-volatile uint32 dbg_CAN0_N0_NBTP;
-volatile uint32 dbg_CAN0_N0_CCCR;
-volatile uint32 dbg_CANRAM0_Word;
-
-/* Debug TBSA configuration */
-volatile uint32 dbg_txbc_tbsa = 0;
-volatile uint32 dbg_mcan_ram_base = 0;
-volatile uint32 dbg_calculated_dadr = 0;
-
-/* Debug symbols to verify display digit mapping */
-volatile uint16 dbg_rxCnt = 0;
-volatile uint8  dbg_ones_idx = 0;
-volatile uint8  dbg_ones_seg = 0;
 
 /*********************************************************************************************************************/
 /*---------------------------------------------Function
@@ -218,24 +190,6 @@ void task_Display(void *arg) {
     boolean t6_started = FALSE;
 
     while (TRUE) {
-      /* Update debug variables */
-      dbg_GPT120_T6CON = GPT120_T6CON.U;
-      dbg_GPT120_CAPREL = GPT120_CAPREL.U;
-      dbg_SRC_GPT120T6 = SRC_GPT120T6.U;
-      dbg_DMA_CH1_CHCFGR = MODULE_DMA.CH[1].CHCFGR.U;
-      dbg_DMA_CH1_SADR = MODULE_DMA.CH[1].SADR.U;
-      dbg_DMA_CH1_DADR = MODULE_DMA.CH[1].DADR.U;
-      dbg_CAN0_N0_NPCR = CAN0_NPCR0.U;
-      dbg_CAN0_N1_NPCR = CAN0_NPCR1.U;
-      dbg_CAN0_N0_NBTP = CAN0_NBTP0.U;
-      dbg_CAN0_N0_CCCR = CAN0_CCCR0.U;
-      dbg_CANRAM0_Word = *(volatile uint32 *)0xF0201008;
-      
-      /* Capture TBSA and calculated destination address */
-      dbg_txbc_tbsa = CAN0_TXBC0.B.TBSA;
-      dbg_mcan_ram_base = 0xF0200000u;
-      dbg_calculated_dadr = dbg_mcan_ram_base + (dbg_txbc_tbsa * 4u) + 0x08u;
-
       uint32 notified = ulTaskNotifyTake(pdTRUE, pdMS_TO_TICKS(10));
 
       if (notified != 0u) {
@@ -244,10 +198,6 @@ void task_Display(void *arg) {
 
         if (canStatus == HAL_E_OK) {
           /* Successful reception - show counter on display */
-          dbg_rxCnt = rxCnt;
-          dbg_ones_idx = (uint8)((rxCnt / 1u) % 10u);
-          dbg_ones_seg = map[dbg_ones_idx];
-          
           tmp1 = Func_SetDisplay(map[(rxCnt / 1000) % 10], 0);
           tmp1 = Func_SetDisplay(map[(rxCnt / 100) % 10], 1);
           tmp1 = Func_SetDisplay(map[(rxCnt / 10) % 10], 2);

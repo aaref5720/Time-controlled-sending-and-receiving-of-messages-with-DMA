@@ -97,14 +97,6 @@ extern L02_Return_Type Func_Adapter_LED1_off(void);
  * variables--------------------------------------------------*/
 /*********************************************************************************************************************/
 
-/* Diagnostic: count how often the T6 ISR is entered (inspect in debugger) */
-volatile unsigned int dbg_t6_isr_hits = 0;
-
-volatile uint16 dbg_t3_val = 0;        // raw Timer3 counter value
-volatile uint32 dbg_tx_db0_word = 0;   // CAN TX buffer DB0..DB3
-volatile uint16 dbg_tx_db0_u16 = 0;    // CAN TX buffer DB0..DB1 (what we WANT)
-volatile uint32 dbg_dma_addr_immediately_after = 0;  // DMA address right after start
-
 /*********************************************************************************************************************/
 /*---------------------------------------------Function
  * Implementations----------------------------------------------*/
@@ -123,9 +115,6 @@ extern volatile uint8 g_send_divider;
 extern volatile uint8 g_send_tick;
 
 IFX_INTERRUPT(ISR_T6_expired, 0, GPT12_T6_SRPN_CPU) {
-  /* increment diagnostic ISR entry counter as first action */
-  dbg_t6_isr_hits++;
-
   BaseType_t xHigherPriorityTaskWoken = pdFALSE;
   SRC_GPT120T6.B.CLRR = 0x1;
   SRC_GPT120T6.B.SWSCLR = 0x1;
@@ -135,9 +124,6 @@ IFX_INTERRUPT(ISR_T6_expired, 0, GPT12_T6_SRPN_CPU) {
     g_send_tick++;
     if (g_send_tick >= g_send_divider) {
       g_send_tick = 0;
-
-      /* Capture T3 value before transfer */
-      Func_GPT12_T3_get_value((uint16*)&dbg_t3_val);
 
       {
         uint16 value;
@@ -153,14 +139,7 @@ IFX_INTERRUPT(ISR_T6_expired, 0, GPT12_T6_SRPN_CPU) {
       MODULE_DMA.CH[1].CHCSR.B.TCOUNT = 1u;
       DMA_TSR1.B.ECH = 1;                     /* Enable channel */
       MODULE_DMA.CH[1].CHCSR.B.SCH = 1;       /* Software trigger */
-      
-      /* Debug: capture DMA address after transfer */
-      dbg_dma_addr_immediately_after = MODULE_DMA.CH[1].DADR.U;
-      
-      /* Capture CAN TX buffer contents */
-      dbg_tx_db0_word = *((volatile uint32*)0xF0200408);
-      dbg_tx_db0_u16  = *((volatile uint16*)0xF0200408);
-      
+
       /* Trigger CAN transmission */
       (void)Func_CAN_send_counter_via_dma();
 
